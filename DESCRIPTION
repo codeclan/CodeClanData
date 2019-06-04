@@ -1,0 +1,19 @@
+Package: CodeClanData
+Type: Package
+Title: Datasets for use with Code Clan's Data Analysis course
+Version: 0.1.0
+Author: c(
+    person("Mhairi", "McNeill", email="mhairihmcneill@gmail.com", role = c("aut", "cre"))
+    )
+Maintainer: Mhairi McNeill <mhairihmcneill@gmail.com>
+Description: Various datasets to use through the Data Analysis course.
+Depends:
+    R (>= 3.1)
+Suggests:
+    jsonlite,
+    readr,
+    usethis
+License: CC0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
