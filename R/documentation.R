@@ -29,3 +29,33 @@ NULL
 #'
 #' @format A nested list with 4 elements
 "colour_list"
+
+
+#' Beer
+#'
+#' A dataset with the brand, brewer, alcohol percentage,
+#'  calories and grams of carhohydrates for 172 beers.
+#'
+#'  Some data cleaning required for this data.
+#'
+#' @format A data frame
+"beer"
+
+#' Tempreature
+#'
+#' A matrix which contains the maximum tempreature for each month in Scotland
+#' over 106 years (1910 from 2015). Each row corrisponds to a year and each
+#' column to a month (January to December).
+#'
+#' @format A matrix
+"temp"
+
+#' Game of Thrones
+#'
+#' Data on about the book 'A Game of Thrones', including names
+#' and genders for all the characters.
+#'
+#' @format A matrix
+"game_of_thrones"
+
+

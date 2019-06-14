@@ -1,0 +1,245 @@
+brand;brewer;percent;calories;carbohydrates
+Amstel;Amstel Brouwerij B.V. (Holland);3.90%;NA;5.33g
+Amstel Light;Amstel Brouwerij B.V. (Holland);5.00%;99;NA
+Asahi Draft Beer;Asahi (Japan);5.50%;146;NA
+Bass & Co's Pale Ale;Bass (England);4.90%;160;NA
+Beamish Irish Cream Stout;Beamish - Crawford (Ireland);5.00%;146;10.0g
+Beck's Beer;Brauerei Beck (Germany);2.30%;143;3.9g
+Beck's Light;Brauerei Beck (Germany);4.80%;64;11.0g
+Beck's Dark;Brauerei Beck (Germany);5.00%;146;*
+Czechver (Budvar);Budweiser Budvar;NA;*;7.8g
+Carlsburg;NA;NA;NA;9.9g
+Carlsburg Light;NA;NA;NA;NA
+NA;NA;4.00%;NA;NA
+Cerveza Carta Blanca;Cerveceria Cauhtemoc (Mexico);4.40%;128;NA
+Cerveza Tecate Beer;Cervecerla Cauhtemoc (Mexico);5.40%;146;NA
+Chester Golden A]e;Greenall Whitley (England);NA;156;7.0g
+Coopers Draught;Coopers;NA;NA;10.9g
+Coopers Stout;NA;NA;NA;5.9g
+Coopers Pale Ale;NA;4.60%;NA;13.99g
+Corona Extra Beer;Cereveria Modela SA (Mexico);NA;148;5.0g
+Corona Light;Cereveria Modela SA (Mexico);4.70%;NA;NA
+Dos Equis XX Imported Beer;Cauhtemoc (Mexico);4.90%;149;NA
+Dos Equis XX Special Lager;Cerveceria Montezuma (Mexico);6.80%;156;NA
+Dragon Stout;Desnoes - Goeddes (Jamaica);5.10%;220;11.0g
+Foster's Lager;Garlton & United (Australia);4.40%;156;NA
+Furstenberg German Beer;Fustlich Ferstenbergische;4.60%;138;NA
+Great Wall;Green Bamboo (China);5.00%;160;NA
+Greenall's Cheshire English Pub Beer;Greenall Whitley PLC (England);5.00%;142;9.5g
+Grolsch Lager Beer;Grolsch Bierbrouweri (Holland);*;145;9.9g
+Guiness Draught - Bottle;Guinness (Ireland);4.27%;126;17.4g
+Guinness Extra Stout;Guinness (Ireland);4.55%;153;NA
+Harp;Harp (Ireland);5.00%;142;11.5g
+Heineken Lager Beer;Heineken (Holland);5.10%;150;NA
+Heineken Special Dark Beer;Heineken (Holland);3.80%;170;6.8g
+Heineken Special Light;Heineken (Holland);NA;99;NA
+NA;NA;6.80%;NA;NA
+Kirin Beer;Kirin (Japan);5.10%;188;NA
+Kronenbourg Beer;Kronenbourg (France);5.00%;153;NA
+Kronenbourg Imported Dark Beer;Kronenbourg (France);5.30%;163;9.9g
+Labatt's 50;Labatt's;9.50%;153;NA
+McEwans Scotch Ale;Scottish & Newcastle (Scotland);5.10%;295;NA
+Molson Canadian Beer;Molson (Canada);6.04%;153;NA
+Molson Golden Beer;Molson (Canada);2.41%;170;NA
+Molson Light;Molson (Canada);5.00%;82;NA
+Moosehead Canadian Lager Beer;Moosehead (Canada);4.70%;153;NA
+Nordik Wolf Light;A.B. Pripps Bryggerier (Sweden);4.90%;110;NA
+O'Keefe Canadian Beer;O'Keefe (Canada);4.20%;142;14.7g
+Pilsener Urquell;Beer Pilsener Urquell Pilzen (Czech.);5.00%;160;NA
+Red Stripe Lager Beer;Desnoes & Geddes (Jamaica);5.00%;153;13.3g
+Samuel Smith's Organic Lager;Samuel Smith's Brewery;5.20%;158;18.8g
+Sheaf Stout;Carlton & United (Australia);4.10%;174;NA
+Sol Cerveza Especial;Cerveceria Montezuma (Mexico);6.60%;131;NA
+Spaten Munich Special Dark Beer;Spaten-Brau (Germany);5.20%;185;12.78g
+Stella Artois;NA;4.90%;NA;8.7g
+St. Pauli Girl Beer;St. Pauli (Germany);4.80%;148;NA
+St. Pauli Girl Dark Beer;St. Pauli (Germany);4.60%;150;NA
+Suntory Draft Beer;Suntory (Japan);4.30%;138;NA
+Superior Imported Beer;Cerveceria Moctezuma (Mexico);4.20%;153;NA
+Thos Cooper & Sons Adelaide Lager;Cooper & Sons (Australia);6.77%;128;NA
+Thos Cooper & Sons Real Ale;Cooper & Sons (Australia);7.10%;160;NA
+Thos Cooper & Sons Stout;Cooper & Sons (Australia);4.85%;205;NA
+Tolly Origlnal Premium Ale;Tollei-ache & Cobbold (England);4.79%;146;NA
+Tsingtao Beer;Tsingtao (China);3.92%;153;NA
+Watney's Red Barrel Beer;Stag (England);5.42%;142;NA
+Wurzburger Hofbrau;Wurtzburger Hofbrauag (Germany);5.44%;160;NA
+Wurtzburger Hofbrau Light;Wurtzburger Hofbrau Ag (Germany);NA;153;NA
+American Amber Lager;Straub Brewery;4.10%;136;10.5g
+American Lager;Straub Brewery;4.10%;132;10.5g
+American Light;Straub Brewery;3.20%;96;7.6g
+Anchor Porter;Anchor;5.60%;209;*
+Anchor Steam;Anchor;4.90%;153;16.0g
+Anheuser Busch Natural Light;Anheuser Busch;4.20%;95;3.2g
+Anheuser Busch Natural Ice;Anheuser Busch;5.90%;157;8.9g
+Aspen Edge;Adolph Coors;4.10%;94;2.6g
+Bard's Gold (Gluten-Free);Bard's Tale Beer Co;4.60%;155;14.2g
+Big Sky I.P.A.;Big Sky Brewing;6.20%;195;*
+Big Sky Moose Drool Brown Ale;Big Sky Brewing;5.20%;177;15.6g
+Big Sky Powder Hound (seasonal);Big Sky Brewing;6.20%;195;*
+Big Sky Scape Goat Pale Ale;Big Sky Brewing;4.70%;163;13.9g
+Big Sky Summer Honey Ale (seasonal);Big Sky Brewing;4.70%;154;11.6g
+Big Sky Trout Slayer Ale;Big Sky Brewing;4.70%;163;13.9g
+Blatz Beer;Blatz;4.80%;153;12.5g
+Blatz Light;Blatz;*;*;8.5g
+Blue Moon;Adolph Coors;5.40%;171;13.7g
+Breckenridge Brown Ale;Breckenridge Brewery;5.60%;196;21.9g
+Breckenridge Red Ale;Breckenridge Brewery;5.50%;193;21.8g
+Bud Dry;Budweiser;5.00%;130;7.8g
+Bud Ice;Budweiser;5.50%;123;8.9g
+Bud Ice Light;Budweiser;5.00%;115;7.5g
+Bud Light;Budweiser;4.20%;110;6.6g
+Bud Light Lime;Budweiser;4.20%;116;8.0g
+Bud Light Platinum;Budweiser;6.00%;137;4.4g
+Budweiser;Budweiser;5.00%;145;10.6g
+Budweiser Black Crown;Budweiser;6.00%;146;10g
+Budweiser Select;Budweiser;4.30%;99;3.1g
+Budweiser Select 55;Budweiser;2.40%;55;1.9g
+NA;NA;NA;NA;NA
+Busch Beer;Anheuser Busch;4.60%;133;10.2g
+Busch Ice;Anheuser Busch;5.90%;169;12.5g
+Busch Light;Anheuser Busch;4.10%;95;3.2g
+Carling Black Label;G. Heileman;4.30%;138;12.5g
+Colt 45 Malt Liquor;G. Heileman;6.10%;174;11.1g
+Coors ;MillerCoors;4.91%;149;12.2g
+Coors Light;MillerCoors;4.15%;104;5.3g
+Deschutes Twilight Summer Ale;Deschutes Brewery;5.00%;162;9.6g
+Deschutes Chainbreaker White IPA;Deschutes Brewery;5.60%;180;10.8g
+Deschutes Pinedrops IPA;Deschutes Brewery;6.50%;190;11.0g
+Extra Gold Lager;MillerCoors;4.97%;152;12.5g
+Flying Dog Dog Schwarz;Flying Dog Brewery;7.80%;222;14.3g
+Flying Dog Doggie Style;Flying Dog Brewery;4.70%;158;11.4g
+Flying Dog DogtoberFest;Flying Dog Brewery;5.60%;165;12.3g
+Flying Dog Double Dog ;Flying Dog Brewery;11.50%;313;16.6g
+Flying Dog Garde Dog;Flying Dog Brewery;5.50%;150;9.3g
+Flying Dog Gonzo;Flying Dog Brewery;9.20%;271;18.9g
+Flying Dog Horn Dog;Flying Dog Brewery;10.20%;314;21.5g
+Flying Dog In Heat Wheat;Flying Dog Brewery;4.70%;138;10.4g
+Flying Dog K-9 Cruiser;Flying Dog Brewery;7.40%;197;10.6g
+Flying Dog Kerberos Tripel;Flying Dog Brewery;8.30%;238;8.6g
+Flying Dog Old Scratch Amber Ale;Flying Dog Brewery;5.50%;154;10.2g
+Flying Dog Raging Bitch;Flying Dog Brewery;8.30%;221;11.6g
+Flying Dog Road Dog;Flying Dog Brewery;6.00%;163;9.9g
+Flying Dog Snake Dog IPA;Flying Dog Brewery;7.10%;188;10.0g
+Flying Dog Tire Bite Golden Ale;Flying Dog Brewery;5.10%;129;6.2g
+Flying Dog Wild Dog: Coffee Stout;Flying Dog Brewery;9.90%;288;20.2g
+Flying Dog Woody Creek White;Flying Dog Brewery;4.80%;131;8.0g
+Genesee Beer;High Falls Brewing;4.50%;148;13.5g
+Genesee Cream Ale;High Falls Brewing;5.10%;162;15.0g
+Genesee Ice;High Falls Brewing;5.90%;156;14.5g
+Genesee Red;High Falls Brewing;4.90%;148;14.0g
+George Killian's Irish Red;MillerCoors;4.98%;162;14.8g
+Icehouse;MillerCoors;5.50%;132;8.7g
+Icehouse 5.0;MillerCoors;5.50%;149;9.8g
+Icehouse Light;MillerCoors;4.13%;103;5.5g
+Hamm's Beer;MillerCoors;4.70%;144;12.1g
+Hamm's Golden Draft;MillerCoors;4.70%;144;12.1g
+Hamm's Special Light;MillerCoors;3.90%;110;8.3g
+Keystone Premium;Adolph Coors;4.43%;111;5.8g
+Keystone Light;Adolph Coors;4.13%;103;5.0g
+Keystone Ice;Adolph Coors;5.90%;142;5.9g
+Leinenkugel Honey Weiss;Leinenkugel;4.92%;149;12.0g
+Leinenkugel Northwoods Lager;Leinenkugel;4.94%;163;15.3g
+Leinenkugel Original;Leinenkugel;4.67%;152;13.9g
+Leinenkugel Creamy Dark;Leinenkugel;4.94%;170;16.8g
+Leinenkugel Red;Leinenkugel;4.94%;166;16.2g
+Leinenkugel Sunset Wheat;Leinenkugel;4.90%;165;16g
+Leinenkugel Light;Leinenkugel;4.19%;105;5.7g
+Leinenkugel Amber Light;Leinenkugel;4.14%;110;7.4g
+Lowenbrau Dark;NA;5.00%;160;NA
+Lowenbrau Special Beer;NA;5.20%;160;NA
+NA;NA;NA;NA;NA
+Magnum Malt Liquor;MillerCoors;5.60%;157;11.2g
+Michael Shea's;High Falls Brewing;4.62%;145;13.0g
+Michelob Amber Boch;Anheuser Busch;5.20%;166;15.0g
+Michelob Beer;Anheuser Busch;5.00%;155;13.3g
+Michelob Golden Draft;Anheuser Busch;4.70%;152;14.1g
+Michelob Golden Draft Light;Anheuser Busch;4.10%;110;7.0g
+Michelob Honey Lager;Anheuser Busch;4.90%;175;17.9g
+Michelob Light;Anheuser Busch;4.30%;113;6.7g
+Michelob Ultra;Anheuser Busch;4.10%;95;2.6g
+Mickey's Fine Malt Liquor;MillerCoors;5.60%;157;11.2g
+Mickey's Ice;MillerCoors;5.80%;157;11.8g
+Miller Chill;MillerCoors;4.20%;110;6.5g
+Miller Genuine Draft;MillerCoors;4.70%;143;13.1g
+Miller Genuine Draft Light;MillerCoors;4.20%;110;7g
+"Miller Genuine Draft ""64""";MillerCoors;2.80%;64;2.4g
+Miller High Life;MillerCoors;4.70%;143;13.1g
+Miller High Life Light;MillerCoors;4.20%;110;7g
+Miller Lite;MillerCoors;4.20%;96;3.2g
+Milwaukee's Best;MillerCoors;4.30%;128;11.4g
+Miller Lite Brewers Collection Amber;MillerCoors;4.20%;110;6.2g
+Miller Lite Brewers Collection Blonde;MillerCoors;4.20%;110;6.2g
+Miller Lite Brewers Collection Wheat;MillerCoors;4.20%;110;6.2g
+Milwaukee's Best Premium;MillerCoors;4.30%;128;11.4g
+Milwaukee's Best Light;MillerCoors;4.20%;98;3.5g
+Milwaukee's Best Ice;MillerCoors;5.90%;144;7.3g
+New Belgium 1554;New Belgium;5.60%;205;25g
+New Belgium 2 Below;New Belgium;6.60%;200;17g
+New Belgium Abbey;New Belgium;7.00%;200;18g
+New Belgium Blue Paddle;New Belgium;4.80%;140;14g
+New Belgium Fat Tire;New Belgium;5.20%;160;15g
+New Belgium Mothership Wit;New Belgium;4.80%;155;15g
+New Belgium Trippel;New Belgium;7.80%;215;20g
+New Belgium Sunshine Wheat;New Belgium;4.80%;145;13g
+O'Doul's;Anheuser Busch;0.40%;70;13.3g
+Old Milwaukee Light;Old Milwaukee;3.80%;114;8.3g
+Old Milwaukee Beer;Old Milwaukee;4.50%;146;12.9g
+Olde English 800 ;MillerCoors;5.90%;160;10.5g
+Olde English 800 7.5;MillerCoors;7.50%;202;13.4g
+Olde English High Gravity 800 ;MillerCoors;8.00%;220;14.6g
+Olympia Premium Lager;Pabst;4.70%;146;11.9g
+Pabst Blue Ribbon;Pabst;4.65%;144;12.01g
+Pabst Extra Light Low Alcohol;Pabst;2.50%;67;*
+Pete's Wicked Ale;NA;5.30%;174;17.7g
+Red Dog;MillerCoors;5.00%;147;14.1g
+Red Hook ESB;Red Hook;5.77%;179;14.15g
+Red Hook IPA;Red Hook;6.50%;188;12.66g
+Rolling Rock Extra Pale;Latrobe;4.60%;142;NA
+Rolling Rock Premium Beer;Latrobe;4.50%;120;10.0g
+Sam Adams Boston Lager;Boston Beer;4.75%;160;18.0g
+Sam Adams Boston Ale;Boston Beer;4.94%;160;19.9g
+Sam Adams Cherry Wheat;Boston Beer;5.20%;166;16.86g
+Sam Adams Cream Stout;Boston Beer;4.69%;195;23.94g
+Sam Adams IPA;Boston Beer;5.93%;175;NA
+Sam Adams Light;Boston Beer;4.05%;119;9.6g
+Sam Adams Pale Ale;Boston Beer;5.25%;145;NA
+NA;NA;NA;NA;NA
+Schaefer Beer;Pabst;4.60%;142;12.0g
+Schlitz Beer;Pabst;4.70%;146;12.1g
+Schlitz Light;Pabst;4.20%;110;*
+Schlitz Malt Liquor;Pabst;6.20%;185;*
+Sierra Nevada Anniversary Ale;Sierra Nevada;5.90%;190;17.3g
+Sierra Nevada Bigfoot;Sierra Nevada;9.60%;330;32.1g
+Sierra Nevada Celebration Ale;Sierra Nevada;6.80%;214;19.4g
+Sierra Nevada Draft Ale;Sierra Nevada;5.00%;157;13.4g
+Sierra Nevada Early Spring Beer;Sierra Nevada;5.90%;190;16.7g
+Sierra Nevada Harvest Ale;Sierra Nevada;6.70%;215;19.3g
+Sierra Nevada India Pale Ale;Sierra Nevada;6.90%;231;20.0g
+Sierra Nevada Pale Ale;Sierra Nevada;5.60%;175;14.1g
+Sierra Nevada Pale Bock;Sierra Nevada;7.00%;218;19.7g
+Sierra Nevada Porter;Sierra Nevada;5.60%;194;18.4g
+Sierra Nevada Stout;Sierra Nevada;5.80%;225;22.3g
+Sierra Nevada Summerfest Beer;Sierra Nevada;5.00%;158;13.7g
+Sierra Nevada Wheat Beer;Sierra Nevada;4.40%;153;13.1g
+Signature Stroh Beer;Stroh's;4.80%;153;*
+Southpaw Light;MillerCoors;5.00%;123;6.6g
+Steel Reserve;MillerCoors;8.10%;222;16.0g
+Steel Reserve Triple Export;MillerCoors;8.10%;222;16.0g
+Steel Reserve Six;MillerCoors;6.00%;160;11.0g
+Stone River Double Bastard;Stone River Brewery;11.20%;NA;NA
+Stroh's Beer;Stroh's;4.60%;149;12.0g
+Stroh's Light;Stroh's;4.40%;113;7g
+Summit Horizon Red IPA;Summit Brewing;5.70%;195;15g
+Summit Summer Ale;Summit Brewing;4.50%;147;12g
+Tuborg Deluxe Dark Export;G. Heileman;5.10%;163;NA
+Tuborg Export Quality;G. Heileman;5.00%;156;NA
+Weinhard's Private Reserve;MillerCoors;4.80%;150;9.9g
+Weinhard's Amber Light;MillerCoors;4.20%;135;11.5g
+Weinhard's Hefeweizen;MillerCoors;4.90%;151;12.2g
+Weinhard's Blonde Lager;MillerCoors;5.10%;161;14.0g
+Weinhard's Pale Ale;MillerCoors;4.60%;147;13g
+Yuengling Ale;D.G. Yuengilng;5.00%;145;10g
+Yuengling Porter;D.G. Yuengilng;4.50%;150;14g
+Yuengling Premium Beer;D.G. Yuengling;4.40%;135;12g
+Yuengling Light;D.G. Yuengling;3.80%;98;6.6g
+Yuengling Lager;D.G. Yuengling;4.40%;135;12g
