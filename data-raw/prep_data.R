@@ -10,6 +10,7 @@ colour_list <- read_rds('data-raw/data/colour_list.rds')
 starwars <- jsonlite::fromJSON(read_file('data-raw/data/starwars_data.json'), simplifyVector = FALSE)$results
 temp <- read_table('data-raw/data/maxtemp.txt')
 beer <- read_delim('data-raw/data/beer.txt', delim = ';')
+olympics <- read_csv('data-raw/data/athlete_events.csv')
 
 get_title <- function(url, name = 'name'){
   request <- GET(url)
@@ -56,9 +57,27 @@ for (i in 1:length(game_of_thrones$characters)){
 
 game_of_thrones$povCharacters <- NULL
 
+# Olympics
+
+olympics <- janitor::clean_names(olympics)
+
+olympics_overall_medals <-
+olympics %>%
+  filter(!is.na(medal)) %>%
+  group_by(team, season, medal) %>%
+  summarise(
+    count = n()
+  ) %>%
+  ungroup %>%
+  mutate(medal = factor(medal, levels = c('Gold', 'Silver', 'Bronze'))) %>%
+  arrange(season, medal, desc(count))
+
+
+
 use_data(students, overwrite = TRUE)
 use_data(colour_list, overwrite = TRUE)
 use_data(starwars, overwrite = TRUE)
 use_data(temp, overwrite = TRUE)
 use_data(beer, overwrite = TRUE)
 use_data(game_of_thrones, overwrite = TRUE)
+use_data(olympics_overall_medals, overwrite = TRUE)

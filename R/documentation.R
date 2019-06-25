@@ -58,4 +58,12 @@ NULL
 #' @format A matrix
 "game_of_thrones"
 
+#' Overall Olympics Medals
+#'
+#' The overall count of Olympic medals in both the summer and winter games.
+#' From years 1896 to 2016.
+#' Data from: https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results/downloads/120-years-of-olympic-history-athletes-and-results.zip/2
+#'
+#' @format A data frame
+"olympics_overall_medals"
 
