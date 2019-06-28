@@ -67,3 +67,26 @@ NULL
 #' @format A data frame
 "olympics_overall_medals"
 
+#' whisky
+#'
+#' Scottish whisky distilleries
+#'
+#' @format A data frame
+"whisky"
+
+#' chinesemeal
+#'
+#' Chinese Meals
+#'
+#' @format A data frame
+"chinesemeal"
+
+#' UK_poly
+#'
+#' UK_poly
+#'
+#' @format A data frame
+"chinesemeal"
+
+
+

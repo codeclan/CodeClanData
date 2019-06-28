@@ -11,6 +11,9 @@ starwars <- jsonlite::fromJSON(read_file('data-raw/data/starwars_data.json'), si
 temp <- read_table('data-raw/data/maxtemp.txt')
 beer <- read_delim('data-raw/data/beer.txt', delim = ';')
 olympics <- read_csv('data-raw/data/athlete_events.csv')
+load('data-raw/data/whisky.Rdata')
+load("data-raw/data/chinesemeal.Rdata")
+load("data-raw/data/UK_poly.Rdata")
 
 get_title <- function(url, name = 'name'){
   request <- GET(url)
@@ -81,3 +84,8 @@ use_data(temp, overwrite = TRUE)
 use_data(beer, overwrite = TRUE)
 use_data(game_of_thrones, overwrite = TRUE)
 use_data(olympics_overall_medals, overwrite = TRUE)
+use_data(whisky, overwrite = TRUE)
+use_data(chinesemeal, overwrite = TRUE)
+use_data(UK_poly, overwrite = TRUE)
+
+
