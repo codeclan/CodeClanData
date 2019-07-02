@@ -14,6 +14,13 @@ olympics <- read_csv('data-raw/data/athlete_events.csv')
 load('data-raw/data/whisky.Rdata')
 load("data-raw/data/chinesemeal.Rdata")
 load("data-raw/data/UK_poly.Rdata")
+load("data-raw/data/pets.Rdata")
+load("data-raw/data/cuckoo.Rdata")
+load("data-raw/data/scottish_exports.Rdata")
+load("data-raw/data/scot_exp.Rdata")
+load("data-raw/data/lotka_volterra.Rdata")
+load("data-raw/data/polydata.Rdata")
+load("data-raw/data/energy_scotland.Rdata")
 
 get_title <- function(url, name = 'name'){
   request <- GET(url)
@@ -75,8 +82,6 @@ olympics %>%
   mutate(medal = factor(medal, levels = c('Gold', 'Silver', 'Bronze'))) %>%
   arrange(season, medal, desc(count))
 
-
-
 use_data(students, overwrite = TRUE)
 use_data(colour_list, overwrite = TRUE)
 use_data(starwars, overwrite = TRUE)
@@ -87,5 +92,12 @@ use_data(olympics_overall_medals, overwrite = TRUE)
 use_data(whisky, overwrite = TRUE)
 use_data(chinesemeal, overwrite = TRUE)
 use_data(UK_poly, overwrite = TRUE)
+use_data(pets, overwrite = TRUE)
+use_data(cuckoo, overwrite = TRUE)
+use_data(scottish_exports, overwrite = TRUE)
+use_data(scot_exp, overwrite = TRUE)
+use_data(lotka_volterra, overwrite = TRUE)
+use_data(polydata, overwrite = TRUE)
+use_data(energy_scotland, overwrite = TRUE)
 
 

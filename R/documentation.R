@@ -86,7 +86,56 @@ NULL
 #' UK_poly
 #'
 #' @format A data frame
-"chinesemeal"
+"UK_poly"
+
+#' pets
+#'
+#' pets
+#'
+#' @format A data frame
+"pets"
+
+#' cuckoo
+#'
+#' cuckoo
+#'
+#' @format A data frame
+"cuckoo"
+
+#' scottish_exports
+#'
+#' scottish_exports
+#'
+#' @format A data frame
+"scottish_exports"
+
+#' scot_exp
+#'
+#' scot_exp
+#'
+#' @format A data frame
+"scot_exp"
+
+#' lotka_volterra
+#'
+#' lotka_volterra
+#'
+#' @format A data frame
+"lotka_volterra"
+
+#' polydata
+#'
+#' polydata
+#'
+#' @format A data frame
+"polydata"
+
+#' energy_scotland
+#'
+#' energy_scotland
+#'
+#' @format A data frame
+"energy_scotland"
 
 
 
