@@ -27,6 +27,9 @@ load("data-raw/data/synthdat.Rdat")
 load("data-raw/data/BMI.Rdata")
 load("data-raw/data/Guerry.Rdata")
 load("data-raw/data/hills2000.Rdat")
+load("data-raw/data/volcano.Rdata")
+load("data-raw/data/physical_activity.Rdata")
+load("data-raw/data/data3.Rdata")
 
 
 
@@ -115,6 +118,9 @@ use_data(exercise_data, overwrite = TRUE)
 use_data(list_weights, overwrite = TRUE)
 use_data(Guerry, overwrite = TRUE)
 use_data(hills2000, overwrite = TRUE)
+use_data(data3, overwrite = TRUE)
+use_data(physical_activity, overwrite = TRUE)
+use_data(volcano, overwrite = TRUE)
 
 
 

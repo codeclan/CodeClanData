@@ -193,4 +193,25 @@ NULL
 #' @format A data frame
 "hills2000"
 
+#' data3
+#'
+#' data3
+#'
+#' @format A data frame
+"data3"
+
+#' physical_activity
+#'
+#' physical_activity
+#'
+#' @format A data frame
+"physical_activity"
+
+#' volcano
+#'
+#' volcano
+#'
+#' @format A data frame
+"volcano"
+
 
