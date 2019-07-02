@@ -21,6 +21,14 @@ load("data-raw/data/scot_exp.Rdata")
 load("data-raw/data/lotka_volterra.Rdata")
 load("data-raw/data/polydata.Rdata")
 load("data-raw/data/energy_scotland.Rdata")
+load("data-raw/data/Benefits.Rdata")
+load("data-raw/data/Backpack.Rdata")
+load("data-raw/data/synthdat.Rdat")
+load("data-raw/data/BMI.Rdata")
+load("data-raw/data/Guerry.Rdata")
+load("data-raw/data/hills2000.Rdat")
+
+
 
 get_title <- function(url, name = 'name'){
   request <- GET(url)
@@ -99,5 +107,14 @@ use_data(scot_exp, overwrite = TRUE)
 use_data(lotka_volterra, overwrite = TRUE)
 use_data(polydata, overwrite = TRUE)
 use_data(energy_scotland, overwrite = TRUE)
+use_data(Benefits, overwrite = TRUE)
+use_data(Backpack, overwrite = TRUE)
+use_data(data1, overwrite = TRUE)
+use_data(data2, overwrite = TRUE)
+use_data(exercise_data, overwrite = TRUE)
+use_data(list_weights, overwrite = TRUE)
+use_data(Guerry, overwrite = TRUE)
+use_data(hills2000, overwrite = TRUE)
+
 
 

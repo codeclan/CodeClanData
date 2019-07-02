@@ -137,5 +137,60 @@ NULL
 #' @format A data frame
 "energy_scotland"
 
+#' Benefits
+#'
+#' Benefits
+#'
+#' @format A data frame
+"Benefits"
+
+#' Backpack
+#'
+#' Backpack
+#'
+#' @format A data frame
+"Backpack"
+
+#' data1
+#'
+#' data1 - sythetic dataset 1
+#'
+#' @format A data frame
+"data1"
+
+#' data2
+#'
+#' data2 - sythetic dataset 2
+#'
+#' @format A data frame
+"data2"
+
+#' exercise_data
+#'
+#' exercise_data
+#'
+#' @format A data frame
+"exercise_data"
+
+#' list_weights
+#'
+#' list_weights
+#'
+#' @format A data frame
+"list_weights"
+
+#' Guerry
+#'
+#' Guerry
+#'
+#' @format A data frame
+"Guerry"
+
+#' hills2000
+#'
+#' hills2000
+#'
+#' @format A data frame
+"hills2000"
 
 
