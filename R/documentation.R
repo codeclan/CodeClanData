@@ -214,4 +214,11 @@ NULL
 #' @format A data frame
 "volcano"
 
+#' bayestown_survey
+#'
+#' bayestown_survey
+#'
+#' @format A data frame
+"bayestown_survey"
+
 
