@@ -11,7 +11,7 @@ starwars <- jsonlite::fromJSON(read_file('data-raw/data/starwars_data.json'), si
 temp <- read_table('data-raw/data/maxtemp.txt')
 beer <- read_delim('data-raw/data/beer.txt', delim = ';')
 olympics <- read_csv('data-raw/data/athlete_events.csv')
-load('data-raw/data/whisky.Rdata')
+whisky <- read_csv("data-raw/data/whiskies.csv") %>% select(-X1)
 load("data-raw/data/chinesemeal.Rdata")
 load("data-raw/data/UK_poly.Rdata")
 load("data-raw/data/pets.Rdata")
