@@ -14,6 +14,15 @@ NULL
 #' @format A data frame with 14 observations of 10 variables
 "students"
 
+
+#' Students Big
+#'
+#' A larger dataset with information from the student census. This time only for UK students.
+#'
+#' @source \url{https://new.censusatschool.org.nz/tools/random-sampler/}
+#' @format A data frame
+"students_big"
+
 #' Starwars
 #'
 #' An extract of the data avalible from the Star Wars API.
@@ -49,6 +58,13 @@ NULL
 #'
 #' @format A matrix
 "temp"
+
+#' Tempreature Data Frame
+#'
+#' The same data avalible in temp, but in a long data frame.
+#'
+#' @format A data frame
+"temp_df"
 
 #' Game of Thrones
 #'

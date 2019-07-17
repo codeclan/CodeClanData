@@ -117,6 +117,19 @@ olympics %>%
   mutate(medal = factor(medal, levels = c('Gold', 'Silver', 'Bronze'))) %>%
   arrange(season, medal, desc(count))
 
+# Temperature Data Frame
+temp_df <- as_tibble(temp) %>%
+  mutate(year = 1910:2015) %>%
+  tidyr::gather(month, max_temp, JAN:DEC) %>%
+  mutate(month = str_to_lower(month)) %>%
+  mutate(month = factor(month, levels = str_to_lower(month.abb)))
+
+# Students Big
+students_big <- read_csv("data-raw/data/uk_school_census.csv") %>% select(-21)
+students_big <- janitor::clean_names(students_big)
+students_big <- na.omit(students_big)
+students_big <- filter(students_big, importance_reducing_pollution != 0)
+
 use_data(students, overwrite = TRUE)
 use_data(colour_list, overwrite = TRUE)
 use_data(starwars, overwrite = TRUE)
@@ -166,5 +179,5 @@ use_data(vote19_eu, overwrite = TRUE)
 use_data(death_males, overwrite = TRUE)
 use_data(flatPrices, overwrite = TRUE)
 use_data(world, overwrite = TRUE)
-
-
+use_data(temp_df, overwrite = TRUE)
+use_data(students_big, overwrite = TRUE)
