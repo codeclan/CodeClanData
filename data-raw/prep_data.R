@@ -130,6 +130,20 @@ students_big <- janitor::clean_names(students_big)
 students_big <- na.omit(students_big)
 students_big <- filter(students_big, importance_reducing_pollution != 0)
 
+# Dogs of NYC
+nyc_dogs <- read_csv("data-raw/data/nyc_dogs.csv")
+
+nyc_dogs <-
+nyc_dogs %>%
+  select(dog_name, gender, breed, birth, colour = dominant_color, borough) %>%
+  filter(gender != "n/a") %>%
+  mutate(
+    dog_name = dog_name %>% str_to_lower %>% str_to_title,
+    colour  = colour %>% str_to_lower %>% str_to_title,
+    gender = if_else(gender == "F", "Female", "Male")
+  )
+
+
 use_data(students, overwrite = TRUE)
 use_data(colour_list, overwrite = TRUE)
 use_data(starwars, overwrite = TRUE)
@@ -181,3 +195,4 @@ use_data(flatPrices, overwrite = TRUE)
 use_data(world, overwrite = TRUE)
 use_data(temp_df, overwrite = TRUE)
 use_data(students_big, overwrite = TRUE)
+use_data(nyc_dogs, overwrite = TRUE)

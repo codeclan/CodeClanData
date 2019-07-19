@@ -380,3 +380,12 @@ NULL
 #' @format A data frame
 "world"
 
+
+#' NYC Dogs
+#'
+#' A dataset with all the dogs registarted in New York City.
+#'
+#' Adapted from: https://fusiontables.google.com/data?docid=1pKcxc8kzJbBVzLu_kgzoAMzqYhZyUhtScXjB0BQ#rows:id=1
+#'
+#' @format A data frame
+"nyc_dogs"
