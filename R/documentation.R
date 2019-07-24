@@ -389,3 +389,12 @@ NULL
 #'
 #' @format A data frame
 "nyc_dogs"
+
+
+#' Cycle Routes
+#'
+#' Data on some Edinburgh cycle routes.
+#'
+#'
+#' @format A list of data frames
+"cycle_routes"

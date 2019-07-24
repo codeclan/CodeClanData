@@ -57,6 +57,7 @@ load("data-raw/data/death_note.RData")
 load("data-raw/data/flatPrices.RData")
 load("data-raw/data/world.RData")
 
+
 get_title <- function(url, name = 'name'){
   request <- GET(url)
   content(request)[[name]]
@@ -143,6 +144,16 @@ nyc_dogs %>%
     gender = if_else(gender == "F", "Female", "Male")
   )
 
+# Cycle route data
+
+library(plotKML) # to read GPX data
+CycleRoute2 <- readGPX("data-raw/data/LAL_Route_2.gpx") # read GPX data
+route2 <- CycleRoute2$tracks[[1]]$`LAL Route 2`[, 1:2] # strip out the long/lat coordinates
+
+CycleRoute3 <- readGPX("data-raw/data/LAL_Route_3.gpx") # read GPX data
+route3 <- CycleRoute3$tracks[[1]]$`LAL Route 3`[, 1:2] # strip out long/lat coords
+
+cycle_routes <- list(route2 = route2, route3 = route3)
 
 use_data(students, overwrite = TRUE)
 use_data(colour_list, overwrite = TRUE)
@@ -196,3 +207,4 @@ use_data(world, overwrite = TRUE)
 use_data(temp_df, overwrite = TRUE)
 use_data(students_big, overwrite = TRUE)
 use_data(nyc_dogs, overwrite = TRUE)
+use_data(cycle_routes, overwrite = TRUE)
