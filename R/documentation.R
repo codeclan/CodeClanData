@@ -398,3 +398,9 @@ NULL
 #'
 #' @format A list of data frames
 "cycle_routes"
+
+
+#' Playfair's Denmark Data
+#'
+#' @format A data frame
+"playfair_denmark"

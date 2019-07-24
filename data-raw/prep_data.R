@@ -4,6 +4,9 @@ library(httr)
 library(purrr)
 library(dplyr)
 library(stringr)
+library(plotKML)
+library(readxl)
+library(janitor)
 
 students <- read_rds('data-raw/data/students_data.rds')
 colour_list <- read_rds('data-raw/data/colour_list.rds')
@@ -146,7 +149,6 @@ nyc_dogs %>%
 
 # Cycle route data
 
-library(plotKML) # to read GPX data
 CycleRoute2 <- readGPX("data-raw/data/LAL_Route_2.gpx") # read GPX data
 route2 <- CycleRoute2$tracks[[1]]$`LAL Route 2`[, 1:2] # strip out the long/lat coordinates
 
@@ -154,6 +156,23 @@ CycleRoute3 <- readGPX("data-raw/data/LAL_Route_3.gpx") # read GPX data
 route3 <- CycleRoute3$tracks[[1]]$`LAL Route 3`[, 1:2] # strip out long/lat coords
 
 cycle_routes <- list(route2 = route2, route3 = route3)
+
+# Intro to visualisation
+
+playfair_denmark <- readr::read_csv("data-raw/data/playfair_Denmark.csv")
+
+# Selecting the right chart excerise data
+
+path <- "data-raw/data/ExerciseSet (with solutions).xlsx"
+
+late_deliveries <-
+read_excel(path, sheet = 1) %>%
+  clean_names() %>%
+  mutate(date = as.Date(date))
+
+recovery_times <-
+  read_excel(path, sheet = 2) %>%
+  clean_names()
 
 use_data(students, overwrite = TRUE)
 use_data(colour_list, overwrite = TRUE)
@@ -208,3 +227,4 @@ use_data(temp_df, overwrite = TRUE)
 use_data(students_big, overwrite = TRUE)
 use_data(nyc_dogs, overwrite = TRUE)
 use_data(cycle_routes, overwrite = TRUE)
+use_data(playfair_denmark, overwrite = TRUE)
