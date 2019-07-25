@@ -10,7 +10,7 @@ beer
 }
 \description{
 A dataset with the brand, brewer, alcohol percentage,
- calories and grams of carhohydrates for 172 beers.
+ calories and grams of carbohydrates for 172 beers.
 }
 \details{
 Some data cleaning required for this data.

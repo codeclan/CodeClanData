@@ -13,6 +13,6 @@ students
 }
 \description{
 A small dataset with some survey information from randomly chosen students.
-Comes from the international census at school random samplier.
+Comes from the international census at school random sampler.
 }
 \keyword{datasets}

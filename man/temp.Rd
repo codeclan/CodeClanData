@@ -3,14 +3,14 @@
 \docType{data}
 \name{temp}
 \alias{temp}
-\title{Tempreature}
+\title{Temperature}
 \format{A matrix}
 \usage{
 temp
 }
 \description{
-A matrix which contains the maximum tempreature for each month in Scotland
-over 106 years (1910 from 2015). Each row corrisponds to a year and each
+A matrix which contains the maximum temperature for each month in Scotland
+over 106 years (1910 from 2015). Each row corresponds to a year and each
 column to a month (January to December).
 }
 \keyword{datasets}

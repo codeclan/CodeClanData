@@ -8,7 +8,7 @@ Author: c(
 Maintainer: Mhairi McNeill <mhairihmcneill@gmail.com>
 Description: Various datasets to use through the Data Analysis course.
 Depends:
-    R (>= 3.1)
+    R (>= 3.5.0)
 Suggests:
     jsonlite,
     readr,
@@ -17,3 +17,4 @@ License: CC0
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
+Language: en-GB

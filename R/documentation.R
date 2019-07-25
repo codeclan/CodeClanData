@@ -8,7 +8,7 @@ NULL
 #' Students
 #'
 #' A small dataset with some survey information from randomly chosen students.
-#' Comes from the international census at school random samplier.
+#' Comes from the international census at school random sampler.
 #'
 #' @source \url{https://new.censusatschool.org.nz/tools/random-sampler/}
 #' @format A data frame with 14 observations of 10 variables
@@ -25,7 +25,7 @@ NULL
 
 #' Starwars
 #'
-#' An extract of the data avalible from the Star Wars API.
+#' An extract of the data available from the Star Wars API.
 #' Information on 10 characters from Star Wars.
 #'
 #' @source \url{https://swapi.co/}
@@ -43,25 +43,25 @@ NULL
 #' Beer
 #'
 #' A dataset with the brand, brewer, alcohol percentage,
-#'  calories and grams of carhohydrates for 172 beers.
+#'  calories and grams of carbohydrates for 172 beers.
 #'
 #'  Some data cleaning required for this data.
 #'
 #' @format A data frame
 "beer"
 
-#' Tempreature
+#' Temperature
 #'
-#' A matrix which contains the maximum tempreature for each month in Scotland
-#' over 106 years (1910 from 2015). Each row corrisponds to a year and each
+#' A matrix which contains the maximum temperature for each month in Scotland
+#' over 106 years (1910 from 2015). Each row corresponds to a year and each
 #' column to a month (January to December).
 #'
 #' @format A matrix
 "temp"
 
-#' Tempreature Data Frame
+#' Temperature Data Frame
 #'
-#' The same data avalible in temp, but in a long data frame.
+#' The same data available in temp, but in a long data frame.
 #'
 #' @format A data frame
 "temp_df"
@@ -169,14 +169,14 @@ NULL
 
 #' data1
 #'
-#' data1 - sythetic dataset 1
+#' data1 - synthetic dataset 1
 #'
 #' @format A data frame
 "data1"
 
 #' data2
 #'
-#' data2 - sythetic dataset 2
+#' data2 - synthetic dataset 2
 #'
 #' @format A data frame
 "data2"
@@ -237,33 +237,33 @@ NULL
 #' @format A data frame
 "bayestown_survey"
 
-#' QikBit_RevBreakdown
+#' QikBit Revenue Breakdown
 #'
 #' 2019 Sales by product group for (fictional company) QikBit
 #'
 #' @format A data frame
-"Q1data"
+"qb_revenue_breakdown"
 
-#' QikBit_MonthlyFigs
+#' QikBit Monthly Figures
 #'
 #' Aug 2018 - Jul 2019 revenue and costs for QikBit, plus sales for single product line
 #'
 #' @format A data frame
-"Q23data"
+"qb_monthly_sales"
 
-#' QikBit_Competitors
+#' QikBit Competitors
 #'
 #' 2015-2019 Revenue for QikBit's competitors
 #'
 #' @format A data frame
-"Q4data"
+"qb_competitors"
 
-#' accData
+#' QikBit Accelerometer Data
 #'
 #' Comparative accelerometer data for 4 devices and 5 individuals over a single day
 #'
 #' @format A data frame
-"Q4data"
+"qb_device_data"
 
 #' bank_expense
 #'
@@ -383,7 +383,7 @@ NULL
 
 #' NYC Dogs
 #'
-#' A dataset with all the dogs registarted in New York City.
+#' A dataset with all the dogs registered in New York City.
 #'
 #' Adapted from: https://fusiontables.google.com/data?docid=1pKcxc8kzJbBVzLu_kgzoAMzqYhZyUhtScXjB0BQ#rows:id=1
 #'
@@ -404,3 +404,67 @@ NULL
 #'
 #' @format A data frame
 "playfair_denmark"
+
+
+#' Blood Pressure
+#'
+#' Systolic Blood pressure in mm/hg vs. daily saturated fat intake in mg for 25 subjects.
+#'
+#' @format A data frame
+"blood_pressure"
+
+#' Car Use
+#'
+#' Car use, population and SO2 concentration in air in unidentified towns
+#'
+#' @format A data frame
+"car_use"
+
+#' d20 Outcomes
+#'
+#' The outcomes from rolling a 20 sided dice 201 times.
+#'
+#' @format A data frame
+"d20_outcomes"
+
+#' 5d20 Outcomes
+#'
+#' The outcomes from rolling five 20 sided dice, and adding up the scores, 1001 times.
+#'
+#' @format A data frame
+"d20x5_outcomes"
+
+#' Fitness Levels
+#'
+#' Aerobic fitness levels of school children in different activity groups, over different ages.
+#'
+#' @format A data frame
+"fitness_levels"
+
+#' Late Deliveries
+#'
+#' Number of late deliveries each month.
+#'
+#' @format A data frame
+"late_deliveries"
+
+#' Pension Liabilities
+#'
+#' Composition of liabilities (£m) of ABC pension scheme.
+#'
+#' @format A data frame
+"pension_liabilities"
+
+#' Pension Surplus
+#'
+#' Surplus in ABC pension scheme.
+#'
+#' @format A data frame
+"pension_surplus"
+
+#' Recovery times
+#'
+#' Average Recovery Times under Treatments A and B, and Control.
+#'
+#'  @format A data frame
+"recovery_times"

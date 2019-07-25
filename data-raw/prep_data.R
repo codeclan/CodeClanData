@@ -10,7 +10,6 @@ library(janitor)
 
 students <- read_rds('data-raw/data/students_data.rds')
 colour_list <- read_rds('data-raw/data/colour_list.rds')
-starwars <- jsonlite::fromJSON(read_file('data-raw/data/starwars_data.json'), simplifyVector = FALSE)$results
 temp <- read_table('data-raw/data/maxtemp.txt')
 beer <- read_delim('data-raw/data/beer.txt', delim = ';')
 olympics <- read_csv('data-raw/data/athlete_events.csv')
@@ -60,19 +59,37 @@ load("data-raw/data/death_note.RData")
 load("data-raw/data/flatPrices.RData")
 load("data-raw/data/world.RData")
 
+qb_competitors <- Q4data
+rm(Q4data)
 
-get_title <- function(url, name = 'name'){
-  request <- GET(url)
-  content(request)[[name]]
-}
+qb_monthly_sales <- Q23data
+rm(Q23data)
 
-for (i in 1:length(starwars)){
-  starwars[[i]]$films <- map(starwars[[i]]$films, get_title, name = 'title')
-  starwars[[i]]$homeworld <- get_title(starwars[[i]]$homeworld)
-  starwars[[i]]$species <- map(starwars[[i]]$species, get_title)
-  starwars[[i]]$vehicles <- map(starwars[[i]]$vehicles, get_title)
-  starwars[[i]]$starships <- map(starwars[[i]]$starships, get_title)
-}
+qb_revenue_breakdown <- Q1data
+rm(Q1data)
+
+qb_device_data <- accData
+rm(accData)
+
+# Star wars
+# starwars <- jsonlite::fromJSON(read_file('data-raw/data/starwars_data.json'), simplifyVector = FALSE)$results
+#
+# get_title <- function(url, name = 'name'){
+#   request <- GET(url)
+#   content(request)[[name]]
+# }
+#
+# for (i in 1:length(starwars)){
+#   starwars[[i]]$films <- map(starwars[[i]]$films, get_title, name = 'title')
+#   starwars[[i]]$homeworld <- get_title(starwars[[i]]$homeworld)
+#   starwars[[i]]$species <- map(starwars[[i]]$species, get_title)
+#   starwars[[i]]$vehicles <- map(starwars[[i]]$vehicles, get_title)
+#   starwars[[i]]$starships <- map(starwars[[i]]$starships, get_title)
+# }
+#
+# write_rds(starwars, "data-raw/data/starwars.rda")
+
+starwars <- read_rds("data-raw/data/starwars.rda")
 
 
 temp <-
@@ -93,18 +110,22 @@ beer <-
 
 # Game of Thrones
 
-response <- GET('https://anapioficeandfire.com/api/books/1')
-game_of_thrones <- content(response)
+# response <- GET('https://anapioficeandfire.com/api/books/1')
+# game_of_thrones <- content(response)
+#
+# for (i in 1:length(game_of_thrones$characters)){
+#
+#   response <- GET(game_of_thrones$characters[[i]])
+#   character <- content(response)
+#
+#   game_of_thrones$characters[[i]] <- list(name = character$name, gender = character$gender)
+# }
+#
+# game_of_thrones$povCharacters <- NULL
+#
+# write_rds(game_of_thrones, "data-raw/data/game_of_thrones.rda")
 
-for (i in 1:length(game_of_thrones$characters)){
-
-  response <- GET(game_of_thrones$characters[[i]])
-  character <- content(response)
-
-  game_of_thrones$characters[[i]] <- list(name = character$name, gender = character$gender)
-}
-
-game_of_thrones$povCharacters <- NULL
+game_of_thrones <- read_rds("data-raw/data/game_of_thrones.rda")
 
 # Olympics
 
@@ -163,7 +184,7 @@ playfair_denmark <- readr::read_csv("data-raw/data/playfair_Denmark.csv")
 
 # Selecting the right chart excerise data
 
-path <- "data-raw/data/ExerciseSet (with solutions).xlsx"
+path <- "data-raw/data/ExerciseSet.xlsx"
 
 late_deliveries <-
 read_excel(path, sheet = 1) %>%
@@ -173,6 +194,42 @@ read_excel(path, sheet = 1) %>%
 recovery_times <-
   read_excel(path, sheet = 2) %>%
   clean_names()
+
+fitness_levels <-
+  read_excel(path, sheet = 3) %>%
+  clean_names()
+
+fitness_levels <-
+fitness_levels %>%
+  tidyr::gather(age, fitness_score, x8:x13) %>%
+  mutate(age = str_remove(age, 'x') %>% as.numeric)
+
+blood_pressure <-
+  read_excel(path, sheet = 4) %>%
+  clean_names()
+
+car_use <-
+  read_excel(path, sheet = 5) %>%
+  clean_names() %>%
+  rename(car_use_percent = car_use, population = population_thousands) %>%
+  mutate(population = population*1000)
+
+d20_outcomes <-
+  read_excel(path, sheet = 6) %>%
+  clean_names()
+
+d20x5_outcomes <-
+  read_excel(path, sheet = 7) %>%
+  clean_names()
+
+pension_surplus <-
+  read_excel(path, sheet = 8) %>%
+  clean_names()
+
+pension_liabilities <-
+  read_excel(path, sheet = 9) %>%
+  clean_names() %>%
+  rename(widowed_people = widow_er_s)
 
 use_data(students, overwrite = TRUE)
 use_data(colour_list, overwrite = TRUE)
@@ -203,10 +260,10 @@ use_data(data3, overwrite = TRUE)
 use_data(physical_activity, overwrite = TRUE)
 use_data(volcano, overwrite = TRUE)
 use_data(bayestown_survey, overwrite = TRUE)
-use_data(Q1data, overwrite = TRUE)
-use_data(Q23data, overwrite = TRUE)
-use_data(Q4data, overwrite = TRUE)
-use_data(accData, overwrite = TRUE)
+use_data(qb_competitors, overwrite = TRUE)
+use_data(qb_device_data, overwrite = TRUE)
+use_data(qb_monthly_sales, overwrite = TRUE)
+use_data(qb_revenue_breakdown, overwrite = TRUE)
 use_data(bank_expense, overwrite = TRUE)
 use_data(competencies, overwrite = TRUE)
 use_data(EUbank, overwrite = TRUE)
@@ -228,3 +285,12 @@ use_data(students_big, overwrite = TRUE)
 use_data(nyc_dogs, overwrite = TRUE)
 use_data(cycle_routes, overwrite = TRUE)
 use_data(playfair_denmark, overwrite = TRUE)
+use_data(blood_pressure, overwrite = TRUE)
+use_data(car_use, overwrite = TRUE)
+use_data(d20_outcomes, overwrite = TRUE)
+use_data(d20x5_outcomes, overwrite = TRUE)
+use_data(fitness_levels, overwrite = TRUE)
+use_data(pension_liabilities, overwrite = TRUE)
+use_data(pension_surplus, overwrite = TRUE)
+use_data(recovery_times, overwrite = TRUE)
+use_data(late_deliveries, overwrite = TRUE)

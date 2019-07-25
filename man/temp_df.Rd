@@ -3,12 +3,12 @@
 \docType{data}
 \name{temp_df}
 \alias{temp_df}
-\title{Tempreature Data Frame}
+\title{Temperature Data Frame}
 \format{A data frame}
 \usage{
 temp_df
 }
 \description{
-The same data avalible in temp, but in a long data frame.
+The same data available in temp, but in a long data frame.
 }
 \keyword{datasets}

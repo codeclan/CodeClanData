@@ -9,6 +9,6 @@
 data1
 }
 \description{
-data1 - sythetic dataset 1
+data1 - synthetic dataset 1
 }
 \keyword{datasets}

@@ -7,8 +7,12 @@
 \format{A data frame}
 \usage{
 late_deliveries
+
+late_deliveries
 }
 \description{
 Number of late deliveries over 12 calendar months for fictional company
+
+Number of late deliveries each month.
 }
 \keyword{datasets}

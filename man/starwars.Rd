@@ -12,7 +12,7 @@
 starwars
 }
 \description{
-An extract of the data avalible from the Star Wars API.
+An extract of the data available from the Star Wars API.
 Information on 10 characters from Star Wars.
 }
 \keyword{datasets}
