@@ -218,7 +218,8 @@ read_excel(path, sheet = 1) %>%
 
 recovery_times <-
   read_excel(path, sheet = 2) %>%
-  clean_names()
+  clean_names() %>%
+  tidyr::pivot_longer(-prognosis, names_to = "treatment_group", values_to = "recovery")
 
 fitness_levels <-
   read_excel(path, sheet = 3) %>%
@@ -254,7 +255,8 @@ pension_surplus <-
 pension_liabilities <-
   read_excel(path, sheet = 9) %>%
   clean_names() %>%
-  rename(widowed_people = widow_er_s)
+  rename(widowed_people = widow_er_s) %>%
+  tidyr::gather("liability_type", "liability_millions")
 
 # Table of numbers
 set.seed(100)
