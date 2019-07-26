@@ -7,6 +7,7 @@ library(stringr)
 library(plotKML)
 library(readxl)
 library(janitor)
+library(tidyr)
 
 students <- read_rds('data-raw/data/students_data.rds')
 colour_list <- read_rds('data-raw/data/colour_list.rds')
@@ -264,6 +265,11 @@ table_of_numbers <- data.frame(
   num = rpois(100, 3)
 )
 
+# IQ Scores
+iq_scores <- read_excel("data-raw/data/IQ_Scores.xlsx") %>%
+  rename(person = Person) %>%
+  pivot_longer(-person, names_to = "test", values_to = "score")
+
 
 use_data(students, overwrite = TRUE)
 use_data(colour_list, overwrite = TRUE)
@@ -332,3 +338,4 @@ use_data(table_of_numbers, overwrite = TRUE)
 use_data(monthly_sales, overwrite = TRUE)
 use_data(total_sales, overwrite = TRUE)
 use_data(got_ratings, overwrite = TRUE)
+use_data(iq_scores, overwrite = TRUE)

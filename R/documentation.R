@@ -504,3 +504,12 @@ NULL
 #'
 #' @format A data frame
 "got_ratings"
+
+#' IQ Scores
+#'
+#' The IQ Scores for 5 people, measured across 3 different tests.
+#' Invented data.
+#'
+#' @format A data frame
+"iq_scores"
+
