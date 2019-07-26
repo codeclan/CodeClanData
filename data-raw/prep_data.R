@@ -21,7 +21,11 @@ whisky <- select(whisky, -Latitude, -Longitude) %>% cbind(whisky2)
 
 monthly_sales <- read_excel("data-raw/data/sales1.xlsx", skip = 1) %>%
   rename(branch = ...1) %>%
-  tidyr::gather(month, sales, -branch)
+  tidyr::gather(month, sales, -branch) %>%
+  group_by(branch) %>%
+  mutate(
+    difference_from_jan = sales - sales[month == "Jan"]
+  )
 
 total_sales <- monthly_sales %>%
   group_by(branch) %>%
