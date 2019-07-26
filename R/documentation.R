@@ -495,3 +495,12 @@ NULL
 #'
 #' @format A data frame
 "total_sales"
+
+
+#' Game of Thrones Ratings
+#'
+#' The IMDB ratings for Game of Thrones, season 1 to 8, by episode.
+#'
+#'
+#' @format A data frame
+"got_ratings"

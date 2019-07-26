@@ -33,6 +33,10 @@ total_sales <- monthly_sales %>%
     sales = sum(sales)
   )
 
+got_ratings <- read_csv("data-raw/data/GoT_ratings.csv", col_types = cols(X4 = col_skip()))
+got_ratings <- data.frame(got_ratings)
+got_ratings <- clean_names(got_ratings)
+
 load("data-raw/data/chinesemeal.Rdata")
 load("data-raw/data/UK_poly.Rdata")
 load("data-raw/data/pets.Rdata")
@@ -327,3 +331,4 @@ use_data(late_deliveries, overwrite = TRUE)
 use_data(table_of_numbers, overwrite = TRUE)
 use_data(monthly_sales, overwrite = TRUE)
 use_data(total_sales, overwrite = TRUE)
+use_data(got_ratings, overwrite = TRUE)
