@@ -22,7 +22,7 @@ whisky <- select(whisky, -Latitude, -Longitude) %>% cbind(whisky2)
 
 monthly_sales <- read_excel("data-raw/data/sales1.xlsx", skip = 1) %>%
   rename(branch = ...1) %>%
-  tidyr::gather(month, sales, -branch) %>%
+  gather(month, sales, -branch) %>%
   group_by(branch) %>%
   mutate(
     difference_from_jan = sales - sales[month == "Jan"]
@@ -170,7 +170,7 @@ olympics %>%
 # Temperature Data Frame
 temp_df <- as_tibble(temp) %>%
   mutate(year = 1910:2015) %>%
-  tidyr::gather(month, max_temp, JAN:DEC) %>%
+  gather(month, max_temp, JAN:DEC) %>%
   mutate(month = str_to_lower(month)) %>%
   mutate(month = factor(month, levels = str_to_lower(month.abb)))
 
@@ -219,7 +219,7 @@ read_excel(path, sheet = 1) %>%
 recovery_times <-
   read_excel(path, sheet = 2) %>%
   clean_names() %>%
-  tidyr::pivot_longer(-prognosis, names_to = "treatment_group", values_to = "recovery")
+  gather("treatment_group", "recovery", -prognosis)
 
 fitness_levels <-
   read_excel(path, sheet = 3) %>%
@@ -227,7 +227,7 @@ fitness_levels <-
 
 fitness_levels <-
 fitness_levels %>%
-  tidyr::gather(age, fitness_score, x8:x13) %>%
+  gather(age, fitness_score, x8:x13) %>%
   mutate(age = str_remove(age, 'x') %>% as.numeric)
 
 blood_pressure <-
@@ -256,7 +256,7 @@ pension_liabilities <-
   read_excel(path, sheet = 9) %>%
   clean_names() %>%
   rename(widowed_people = widow_er_s) %>%
-  tidyr::gather("liability_type", "liability_millions")
+  gather("liability_type", "liability_millions")
 
 # Table of numbers
 set.seed(100)
