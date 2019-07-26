@@ -19,16 +19,6 @@ load("data-raw/data/whisky.RData")
 whisky2 <- read_csv("data-raw/data/whiskies.csv") %>% select(Latitude, Longitude)
 whisky <- select(whisky, -Latitude, -Longitude) %>% cbind(whisky2)
 
-monthly_sales <- read_excel("data-raw/data/sales1.xlsx", skip = 1) %>%
-  rename(branch = ...1) %>%
-  tidyr::gather(month, sales, -branch)
-
-total_sales <- monthly_sales %>%
-  group_by(branch) %>%
-  summarise(
-    sales = sum(sales)
-  )
-
 load("data-raw/data/chinesemeal.Rdata")
 load("data-raw/data/UK_poly.Rdata")
 load("data-raw/data/pets.Rdata")
@@ -256,6 +246,18 @@ table_of_numbers <- data.frame(
   num = rpois(100, 3)
 )
 
+# Sales data
+
+monthly_sales <- read_excel("data-raw/data/sales1.xlsx", skip = 1) %>%
+  rename(branch = ...1) %>%
+  tidyr::gather(month, sales, -branch) %>%
+  filter(month %in% c("Jan", "April"))
+
+total_sales <- monthly_sales %>%
+  group_by(branch) %>%
+  summarise(
+    sales = sum(sales)
+  )
 
 use_data(students, overwrite = TRUE)
 use_data(colour_list, overwrite = TRUE)
