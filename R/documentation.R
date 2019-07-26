@@ -468,3 +468,30 @@ NULL
 #'
 #'  @format A data frame
 "recovery_times"
+
+#' Table of Numbers
+#'
+#' A randomly generated table of 100 numbers. Numbers come from a Poisson distribution
+#' with mean 3.
+#'
+#' @format A data frame
+"table_of_numbers"
+
+
+#' Monthly Sales
+#'
+#' An invented dataset with monthly sales across 7 branches.
+#'
+#' A summary of this dataset can be found in `total_sales`.
+#'
+#' @format A data frame
+"monthly_sales"
+
+#' Total sales
+#'
+#' An invented dataset with total sales across 7 branches.
+#'
+#' A monthly breakdown of this dataset can be found in `monthly_sales`.
+#'
+#' @format A data frame
+"total_sales"

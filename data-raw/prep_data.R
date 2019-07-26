@@ -19,6 +19,16 @@ load("data-raw/data/whisky.RData")
 whisky2 <- read_csv("data-raw/data/whiskies.csv") %>% select(Latitude, Longitude)
 whisky <- select(whisky, -Latitude, -Longitude) %>% cbind(whisky2)
 
+monthly_sales <- read_excel("data-raw/data/sales1.xlsx", skip = 1) %>%
+  rename(branch = ...1) %>%
+  tidyr::gather(month, sales, -branch)
+
+total_sales <- monthly_sales %>%
+  group_by(branch) %>%
+  summarise(
+    sales = sum(sales)
+  )
+
 load("data-raw/data/chinesemeal.Rdata")
 load("data-raw/data/UK_poly.Rdata")
 load("data-raw/data/pets.Rdata")
@@ -71,6 +81,9 @@ rm(Q1data)
 qb_device_data <- accData
 rm(accData)
 
+# This is how the starwars data is generated, keeping for reference but commented out because
+# it takes a long time to run.
+
 # Star wars
 # starwars <- jsonlite::fromJSON(read_file('data-raw/data/starwars_data.json'), simplifyVector = FALSE)$results
 #
@@ -109,6 +122,9 @@ beer <-
 
 
 # Game of Thrones
+
+# This is how the game of thrones data is generated, keeping for reference but commented out because
+# it takes a long time to run.
 
 # response <- GET('https://anapioficeandfire.com/api/books/1')
 # game_of_thrones <- content(response)
@@ -231,6 +247,16 @@ pension_liabilities <-
   clean_names() %>%
   rename(widowed_people = widow_er_s)
 
+# Table of numbers
+set.seed(100)
+
+table_of_numbers <- data.frame(
+  x = rep(1:10, times = 10),
+  y = rep(1:10, each = 10),
+  num = rpois(100, 3)
+)
+
+
 use_data(students, overwrite = TRUE)
 use_data(colour_list, overwrite = TRUE)
 use_data(starwars, overwrite = TRUE)
@@ -294,3 +320,6 @@ use_data(pension_liabilities, overwrite = TRUE)
 use_data(pension_surplus, overwrite = TRUE)
 use_data(recovery_times, overwrite = TRUE)
 use_data(late_deliveries, overwrite = TRUE)
+use_data(table_of_numbers, overwrite = TRUE)
+use_data(monthly_sales, overwrite = TRUE)
+use_data(total_sales, overwrite = TRUE)
