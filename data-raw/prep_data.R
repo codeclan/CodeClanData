@@ -248,6 +248,21 @@ d20x5_outcomes <-
   read_excel(path, sheet = 7) %>%
   clean_names()
 
+
+d20_outcomes <-
+  data.frame(
+    outcome = rep(d20_outcomes$outcome, times = d20_outcomes$count)
+  ) %>%
+  sample_n(size = nrow(.))
+
+d20x5_outcomes <-
+  data.frame(
+    outcome = rep(d20x5_outcomes$outcome, times = d20x5_outcomes$count)
+  ) %>%
+  sample_n(size = nrow(.))
+
+
+
 pension_surplus <-
   read_excel(path, sheet = 8) %>%
   clean_names()
@@ -256,7 +271,7 @@ pension_liabilities <-
   read_excel(path, sheet = 9) %>%
   clean_names() %>%
   rename(widowed_people = widow_er_s) %>%
-  gather("liability_type", "liability_millions")
+  gather("liability_type", "liability_millions", -year)
 
 # Table of numbers
 set.seed(100)
