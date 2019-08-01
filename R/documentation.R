@@ -513,3 +513,76 @@ NULL
 #' @format A data frame
 "iq_scores"
 
+#' school_census
+#'
+#' A New Zealand school census
+#' https://new.censusatschool.org.nz/about/
+#'
+#' @format A data frame
+"school_census"
+
+#' all_deaths
+#'
+#' Game of Thrones Deaths
+#' https://www.kaggle.com/mylesoneill/game-of-thrones#character-deaths.csv
+#'
+#' @format A data frame
+"all_deaths"
+
+#' drinks_content
+#'
+#' Starbuck calorie dataset
+#' https://www.kaggle.com/starbucks/starbucks-menu
+#'
+#' @format A data frame
+"drinks_content"
+
+#' hospital_visits
+#'
+#' Reasons people were admitted to hospital between 1993 and 1998.
+#' Purposely messy dataset
+#'
+#' @format A data frame
+"hospital_visits"
+
+#' JNJ_stock_price
+#'
+#' JNJ stock prices
+#'
+#'
+#' @format A data frame
+"JNJ_stock_price"
+
+#' IBM_stock_price
+#'
+#' IBM stock prices
+#'
+#'
+#' @format A data frame
+"IBM_stock_price"
+
+#' refunds
+#'
+#' Refunds for Brazils House of Deputies
+#' https://www.kaggle.com/epattaro/brazils-house-of-deputies-reimbursements
+#'
+#' @format A data frame
+"refunds"
+
+#' comms_data
+#'
+#' Telecom Data
+#'
+#'
+#' @format A data frame
+"comms_data"
+
+#' women_in_gov
+#'
+#' Women in Parliament
+#' https://data.worldbank.org/indicator/SG.GEN.PARL.ZS
+#'
+#' @format A data frame
+"women_in_gov"
+
+
