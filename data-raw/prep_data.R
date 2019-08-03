@@ -288,6 +288,17 @@ iq_scores <- read_excel("data-raw/data/IQ_Scores.xlsx") %>%
   pivot_longer(-person, names_to = "test", values_to = "score")
 
 
+#Stephs datasets
+school_census <- read_csv('data-raw/data/school_census.csv')
+all_deaths <- read_csv("data-raw/data/character-deaths.csv")
+drinks_content <- read_csv("data-raw/data/starbucks_drinkMenu_expanded.csv")
+hospital_visits <- read_csv("data-raw/data/hospitals93to98.csv")
+JNJ_stock_price <- read_csv("data-raw/data/JNJ.csv")
+IBM_stock_price <- read_csv("data-raw/data/IBM.csv")
+refunds  <- read_csv("data-raw/data/refunds_info.csv")
+comms_data <- read_csv("data-raw/data/telecom_data.csv")
+women_in_gov <- read_csv("data-raw/data/women_in_gov.csv", skip = 4)
+
 use_data(students, overwrite = TRUE)
 use_data(colour_list, overwrite = TRUE)
 use_data(starwars, overwrite = TRUE)
@@ -356,3 +367,13 @@ use_data(monthly_sales, overwrite = TRUE)
 use_data(total_sales, overwrite = TRUE)
 use_data(got_ratings, overwrite = TRUE)
 use_data(iq_scores, overwrite = TRUE)
+use_data(school_census, overwrite = TRUE)
+use_data(all_deaths, overwrite = TRUE)
+use_data(drinks_content, overwrite = TRUE)
+use_data(hospital_visits, overwrite = TRUE)
+use_data(JNJ_stock_price, overwrite = TRUE)
+use_data(IBM_stock_price, overwrite = TRUE)
+use_data(refunds, overwrite = TRUE)
+use_data(comms_data, overwrite = TRUE)
+use_data(women_in_gov, overwrite = TRUE)
+
