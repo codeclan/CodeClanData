@@ -585,4 +585,26 @@ NULL
 #' @format A data frame
 "women_in_gov"
 
+#' Messy
+#'
+#' A small example messy dataset
+#' Invented data.
+#'
+#' @format A data frame
+"messy"
 
+#' customer orders
+#'
+#' Customer orders for three different people, with info and amount.
+#' Invented data.
+#'
+#' @format A data frame
+"messy_orders"
+
+#' income
+#'
+#' Income info for different religious groups.
+#' Invented data.
+#'
+#' @format A data frame
+"income"
