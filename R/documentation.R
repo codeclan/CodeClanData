@@ -608,3 +608,22 @@ NULL
 #'
 #' @format A data frame
 "income"
+
+
+#' Savings - Train
+#'
+#' Invented data about how much money people have saved.
+#'
+#' Data for training models.
+#'
+#' @format A data frame
+"savings_train"
+
+#' Savings - Test
+#'
+#' Invented data about how much money people have saved.
+#'
+#' Data for testing models.
+#'
+#' @format A data frame
+"savings_test"

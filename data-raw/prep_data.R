@@ -302,6 +302,35 @@ load("data-raw/data/messy.rda")
 load("data-raw/data/messy_orders.rda")
 load("data-raw/data/income.rda")
 
+
+# Total Savings
+
+female_names <- c("Amy", "Bonnie", "Cara", "Dora", "Emmy", "Florence", "Gilly", "Helena", "India", "Jools")
+male_names <- c("Angus", "Bert", "Charles", "Donald", "Ed", "Freddy", "Gord", "Harry", "Ivan", "Jimmy")
+all_surnames <- read_lines("data-raw/data/surnames.txt")[1:20]
+all_genders <- c("Male", "Female")
+all_job_areas <- c("Human Resources", "Sales", "Product Management", "Training", "Legal")
+all_locations <- c("Edinburgh", "Glasgow", "Shetland", "Stirling", "Inverness", "Aberdeen", "Orkney", "Western Isles")
+
+make_savings_data <- function(data_size){
+  tibble(
+    gender = sample(all_genders, data_size, replace = TRUE),
+    name = if_else(gender == "Female",
+                   sample(female_names, data_size, replace = TRUE),
+                   sample(male_names, data_size, replace = TRUE)),
+    surname = sample(all_surnames, data_size, replace = TRUE),
+    job_area = sample(all_job_areas, data_size, replace = TRUE),
+    salary = rpois(data_size, 20)*1000,
+    age = runif(data_size, 18, 90) %>% round,
+    retired = if_else(age > 65, "Yes", "No"),
+    location = sample(all_locations, data_size, replace = TRUE),
+    savings = 0.5*salary + (retired == "No")*20000 + 200*age + rnorm(data_size, sd = 10000) %>% round()
+  )
+}
+
+savings_train <- make_savings_data(1000)
+savings_test <- make_savings_data(200)
+
 use_data(students, overwrite = TRUE)
 use_data(colour_list, overwrite = TRUE)
 use_data(starwars, overwrite = TRUE)
@@ -382,4 +411,5 @@ use_data(women_in_gov, overwrite = TRUE)
 use_data(messy, overwrite = TRUE)
 use_data(messy_orders, overwrite = TRUE)
 use_data(income, overwrite = TRUE)
-
+use_data(savings_train, overwrite = TRUE)
+use_data(savings_test, overwrite = TRUE)
