@@ -38,6 +38,8 @@ got_ratings <- read_csv("data-raw/data/GoT_ratings.csv", col_types = cols(X4 = c
 got_ratings <- data.frame(got_ratings)
 got_ratings <- clean_names(got_ratings)
 
+insurance <- read_csv("data-raw/data/insurance")
+
 load("data-raw/data/chinesemeal.Rdata")
 load("data-raw/data/UK_poly.Rdata")
 load("data-raw/data/pets.Rdata")
@@ -412,3 +414,4 @@ use_data(messy, overwrite = TRUE)
 use_data(messy_orders, overwrite = TRUE)
 use_data(income, overwrite = TRUE)
 use_data(savings, overwrite = TRUE)
+use_data(insurance, overwrite = TRUE)
