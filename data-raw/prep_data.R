@@ -328,8 +328,8 @@ make_savings_data <- function(data_size){
   )
 }
 
-savings_train <- make_savings_data(1000)
-savings_test <- make_savings_data(200)
+savings <- make_savings_data(1200)
+
 
 use_data(students, overwrite = TRUE)
 use_data(colour_list, overwrite = TRUE)
@@ -411,5 +411,4 @@ use_data(women_in_gov, overwrite = TRUE)
 use_data(messy, overwrite = TRUE)
 use_data(messy_orders, overwrite = TRUE)
 use_data(income, overwrite = TRUE)
-use_data(savings_train, overwrite = TRUE)
-use_data(savings_test, overwrite = TRUE)
+use_data(savings, overwrite = TRUE)

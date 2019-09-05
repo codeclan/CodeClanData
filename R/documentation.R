@@ -610,20 +610,12 @@ NULL
 "income"
 
 
-#' Savings - Train
+#' Savings
 #'
 #' Invented data about how much money people have saved.
 #'
-#' Data for training models.
 #'
 #' @format A data frame
-"savings_train"
+"savings"
 
-#' Savings - Test
-#'
-#' Invented data about how much money people have saved.
-#'
-#' Data for testing models.
-#'
-#' @format A data frame
-"savings_test"
+
