@@ -332,6 +332,8 @@ make_savings_data <- function(data_size){
 
 savings <- make_savings_data(1200)
 
+example_psi <- read_csv("data-raw/data/example_psi.csv")
+
 
 use_data(students, overwrite = TRUE)
 use_data(colour_list, overwrite = TRUE)
@@ -415,3 +417,4 @@ use_data(messy_orders, overwrite = TRUE)
 use_data(income, overwrite = TRUE)
 use_data(savings, overwrite = TRUE)
 use_data(insurance, overwrite = TRUE)
+use_data(example_psi, overwrite = TRUE)

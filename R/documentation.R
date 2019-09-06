@@ -619,3 +619,12 @@ NULL
 "savings"
 
 
+
+#' Example PSI
+#'
+#' Example of PSI data
+#'
+#'
+#' @format A data frame
+"example_psi"
+
