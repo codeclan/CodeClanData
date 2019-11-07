@@ -14,6 +14,7 @@ colour_list <- read_rds('data-raw/data/colour_list.rds')
 temp <- read_table('data-raw/data/maxtemp.txt')
 beer <- read_delim('data-raw/data/beer.txt', delim = ';')
 olympics <- read_csv('data-raw/data/athlete_events.csv')
+game_sales <- read_csv('data-raw/data/game_sales.csv')
 
 # Fixing whisky data
 load("data-raw/data/whisky.RData")
@@ -26,7 +27,8 @@ monthly_sales <- read_excel("data-raw/data/sales1.xlsx", skip = 1) %>%
   group_by(branch) %>%
   mutate(
     difference_from_jan = sales - sales[month == "Jan"]
-  )
+  ) %>%
+  ungroup()
 
 total_sales <- monthly_sales %>%
   group_by(branch) %>%
@@ -79,6 +81,14 @@ load("data-raw/data/VoteEU.RData")
 load("data-raw/data/death_note.RData")
 load("data-raw/data/flatPrices.RData")
 load("data-raw/data/world.RData")
+
+benefits <- Benefits
+
+guerry <- Guerry
+guerry <- clean_names(guerry)
+
+backpack <- Backpack
+backpack <- clean_names(backpack)
 
 qb_competitors <- Q4data
 rm(Q4data)
@@ -352,13 +362,13 @@ use_data(scot_exp, overwrite = TRUE)
 use_data(lotka_volterra, overwrite = TRUE)
 use_data(polydata, overwrite = TRUE)
 use_data(energy_scotland, overwrite = TRUE)
-use_data(Benefits, overwrite = TRUE)
-use_data(Backpack, overwrite = TRUE)
+use_data(benefits, overwrite = TRUE)
+use_data(backpack, overwrite = TRUE)
 use_data(data1, overwrite = TRUE)
 use_data(data2, overwrite = TRUE)
 use_data(exercise_data, overwrite = TRUE)
 use_data(list_weights, overwrite = TRUE)
-use_data(Guerry, overwrite = TRUE)
+use_data(guerry, overwrite = TRUE)
 use_data(hills2000, overwrite = TRUE)
 use_data(data3, overwrite = TRUE)
 use_data(physical_activity, overwrite = TRUE)
@@ -418,3 +428,4 @@ use_data(income, overwrite = TRUE)
 use_data(savings, overwrite = TRUE)
 use_data(insurance, overwrite = TRUE)
 use_data(example_psi, overwrite = TRUE)
+use_data(game_sales, overwrite = TRUE)
