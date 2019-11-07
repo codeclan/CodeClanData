@@ -170,38 +170,55 @@ NULL
 #'
 #' stateur
 #' state unemployment rate (in %)
+#'
 #' statemb
 #' state maximum benefit level
+#'
 #' state
 #' state of residence code
+#'
 #' age
 #' age in years
+#'
 #' tenure
 #' years of tenure in job lost
+#'
 #' joblost
 #' a factor with levels (slack_work,position_abolished,seasonal_job_ended,other)
+#'
 #' nwhite
 #' non-white ?
+#'
 #' school12
 #' more than 12 years of school ?
+#'
 #' sex
 #' a factor with levels (male,female)
+#'
 #' bluecol
 #' blue collar worker ?
+#'
 #' smsa
 #' lives is smsa ?
+#'
 #' married
 #' married ?
+#'
 #' dkids
 #' has kids ?
+#'
 #' dykids
 #' has young kids (0-5 yrs) ?
+#'
 #' yrdispl
 #' year of job displacement (1982=1,..., 1991=10)
+#'
 #' rr
 #' replacement rate
+#'
 #' head
 #' is head of household ?
+#'
 #' ui
 #' applied for (and received) UI benefits ?
 #'
@@ -768,15 +785,25 @@ NULL
 #' Global game sales data
 #'
 #' name            : Title of the game
+#'
 #' genre           : Type of game
+#'
 #' year_of_release : Year the game was released
+#'
 #' publisher       : Publisher of game
+#'
 #' sales           : Total global sales, in millions
+#'
 #' critic_score    : Critics review score (from 0 to 100) from Metacritic
+#'
 #' user_score      : Users review score (from 0 to 10) from Metacritic
+#'
 #' developer       : Studio that created the game
+#'
 #' rating          : American ESRB rating for the game
+#'
 #' platform        : Console the game runs on
+#'
 #'
 #' @format A data frame
 "game_sales"
