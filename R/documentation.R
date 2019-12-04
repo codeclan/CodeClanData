@@ -770,6 +770,23 @@ NULL
 "savings"
 
 
+#' Salaries
+#'
+#' Inveted data about job location, job type and salary.
+#'
+#'
+#' @format A data frame
+"salary"
+
+#' Population
+#'
+#' A dataset of locations and genders.
+#'
+#'
+#' @format A data frame
+"population"
+
+
 
 #' Example PSI
 #'

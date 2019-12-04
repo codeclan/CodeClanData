@@ -15,6 +15,7 @@ temp <- read_table('data-raw/data/maxtemp.txt')
 beer <- read_delim('data-raw/data/beer.txt', delim = ';')
 olympics <- read_csv('data-raw/data/athlete_events.csv')
 game_sales <- read_csv('data-raw/data/game_sales.csv')
+population <- read_csv('data-raw/data/population.csv') %>% select(-X1)
 
 # Fixing whisky data
 load("data-raw/data/whisky.RData")
@@ -342,6 +343,16 @@ make_savings_data <- function(data_size){
 
 savings <- make_savings_data(1200)
 
+salary <- make_savings_data(1000)
+
+salary <-
+salary %>%
+  select(job_area, salary, location) %>%
+  mutate(
+    job_area = if_else(location == "Shetland", "Legal", job_area),
+    salary = salary + if_else(job_area %in% c("Legal", "Product Management"), 5000, 0)
+  )
+
 example_psi <- read_csv("data-raw/data/example_psi.csv")
 
 
@@ -426,6 +437,8 @@ use_data(messy, overwrite = TRUE)
 use_data(messy_orders, overwrite = TRUE)
 use_data(income, overwrite = TRUE)
 use_data(savings, overwrite = TRUE)
+use_data(salary, overwrite = TRUE)
 use_data(insurance, overwrite = TRUE)
 use_data(example_psi, overwrite = TRUE)
 use_data(game_sales, overwrite = TRUE)
+use_data(population, overwrite = TRUE)
