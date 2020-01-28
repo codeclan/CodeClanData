@@ -355,6 +355,29 @@ salary %>%
 
 example_psi <- read_csv("data-raw/data/example_psi.csv")
 
+amazon_reviews <- read_csv("data-raw/data/Datafiniti_Amazon_Consumer_Reviews_of_Amazon_Products.csv")
+amazon_reviews <- clean_names(amazon_reviews)
+
+amazon_reviews <-
+amazon_reviews %>%
+  filter(name != "Amazon 9W PowerFast Official OEM USB Charger and Power Adapter for Fire Tablets and Kindle eReaders") %>%
+  filter(name != "Amazon Fire TV with 4K Ultra HD and Alexa Voice Remote (Pendant Design) | Streaming Media Player")
+
+amazon_reviews <-
+amazon_reviews %>%
+  mutate(
+    name = case_when(
+      str_detect(name, "Fire") ~ "Fire Tablet",
+      str_detect(name, "Kindle") ~ "Kindle",
+      str_detect(name, "Echo") ~ "Echo",
+      str_detect(name, "Alexa") ~ "Echo",
+      TRUE ~ name
+    )
+  )
+
+amazon_reviews <-
+amazon_reviews %>%
+  select(name, date = reviews_date, rating = reviews_rating, helpful_votes = reviews_num_helpful, text = reviews_text, title = reviews_title)
 
 use_data(students, overwrite = TRUE)
 use_data(colour_list, overwrite = TRUE)
@@ -442,3 +465,4 @@ use_data(insurance, overwrite = TRUE)
 use_data(example_psi, overwrite = TRUE)
 use_data(game_sales, overwrite = TRUE)
 use_data(population, overwrite = TRUE)
+use_data(amazon_reviews, overwrite = TRUE)
