@@ -9,6 +9,171 @@ library(readxl)
 library(janitor)
 library(tidyr)
 
+##########
+### A ###
+#########
+
+# All deaths
+all_deaths <- read_csv("data-raw/data/character-deaths.csv")
+
+# Amazon reviews
+amazon_reviews <- read_csv("data-raw/data/Datafiniti_Amazon_Consumer_Reviews_of_Amazon_Products.csv")
+amazon_reviews <- clean_names(amazon_reviews)
+
+amazon_reviews <-
+  amazon_reviews %>%
+  filter(name != "Amazon 9W PowerFast Official OEM USB Charger and Power Adapter for Fire Tablets and Kindle eReaders") %>%
+  filter(name != "Amazon Fire TV with 4K Ultra HD and Alexa Voice Remote (Pendant Design) | Streaming Media Player")
+
+amazon_reviews <-
+  amazon_reviews %>%
+  mutate(
+    name = case_when(
+      str_detect(name, "Fire") ~ "Fire Tablet",
+      str_detect(name, "Kindle") ~ "Kindle",
+      str_detect(name, "Echo") ~ "Echo",
+      str_detect(name, "Alexa") ~ "Echo",
+      TRUE ~ name
+    )
+  )
+
+amazon_reviews <-
+  amazon_reviews %>%
+  select(name, date = reviews_date, rating = reviews_rating, helpful_votes = reviews_num_helpful, text = reviews_text, title = reviews_title)
+
+#########
+### B ###
+#########
+
+# Backpack
+load("data-raw/data/Backpack.Rdata")
+backpack <- Backpack
+backpack <- clean_names(backpack)
+
+# Bank Expense
+load("data-raw/data/bank_expense.RData")
+
+# Bayestown survey
+
+# Beer
+
+# Benefits
+
+# Blood Pressure
+
+#########
+### C ###
+#########
+
+# Car use
+
+# Chinese Meal
+
+# Colour List
+
+# Comms Data
+
+# Competencies
+
+# Coo
+
+#########
+### D ###
+#########
+
+#########
+### E ###
+#########
+
+#########
+### F ###
+#########
+
+#########
+### G ###
+#########
+
+#########
+### H ###
+#########
+
+#########
+### I ###
+#########
+
+#########
+### J ###
+#########
+
+#########
+### K ###
+#########
+
+#########
+### L ###
+#########
+
+#########
+### M ###
+#########
+
+#########
+### N ###
+#########
+
+#########
+### O ###
+#########
+
+#########
+### P ###
+#########
+
+#########
+### Q ###
+#########
+
+#########
+### R ###
+#########
+
+refunds <- read_csv("data-raw/data/refunds_info.csv", col_types = cols(party_ideology4 = col_character()))
+
+#########
+### S ###
+#########
+
+#########
+### T ###
+#########
+
+tyrell_corp_jobs <- read_csv("data-raw/data/TyrellCorpJobs.csv")
+
+#########
+### U ###
+#########
+
+#########
+### V ###
+#########
+
+#########
+### W ###
+#########
+
+#########
+### X ###
+#########
+
+#########
+### Y ###
+#########
+
+#########
+### Z ###
+#########
+
+
 students <- read_rds('data-raw/data/students_data.rds')
 colour_list <- read_rds('data-raw/data/colour_list.rds')
 temp <- read_table('data-raw/data/maxtemp.txt')
@@ -53,7 +218,6 @@ load("data-raw/data/lotka_volterra.Rdata")
 load("data-raw/data/polydata.Rdata")
 load("data-raw/data/energy_scotland.Rdata")
 load("data-raw/data/Benefits.Rdata")
-load("data-raw/data/Backpack.Rdata")
 load("data-raw/data/synthdat.Rdat")
 load("data-raw/data/BMI.Rdata")
 load("data-raw/data/Guerry.Rdata")
@@ -66,7 +230,6 @@ load("data-raw/data/QikBit_Competitors.Rdata")
 load("data-raw/data/QikBit_MonthlyFigs.Rdata")
 load("data-raw/data/QikBit_RevBreakdown.Rdata")
 load("data-raw/data/accData.Rdata")
-load("data-raw/data/bank_expense.RData")
 load("data-raw/data/competencies.RData")
 load("data-raw/data/EUbank.RData")
 load("data-raw/data/euro_ineq.RData")
@@ -88,8 +251,6 @@ benefits <- Benefits
 guerry <- Guerry
 guerry <- clean_names(guerry)
 
-backpack <- Backpack
-backpack <- clean_names(backpack)
 
 qb_competitors <- Q4data
 rm(Q4data)
@@ -303,7 +464,6 @@ iq_scores <- read_excel("data-raw/data/IQ_Scores.xlsx") %>%
 
 #Stephs datasets
 school_census <- read_csv('data-raw/data/school_census.csv')
-all_deaths <- read_csv("data-raw/data/character-deaths.csv")
 drinks_content <- read_csv("data-raw/data/starbucks_drinkMenu_expanded.csv")
 hospital_visits <- read_csv("data-raw/data/hospitals93to98.csv")
 JNJ_stock_price <- read_csv("data-raw/data/JNJ.csv")
@@ -355,114 +515,95 @@ salary %>%
 
 example_psi <- read_csv("data-raw/data/example_psi.csv")
 
-amazon_reviews <- read_csv("data-raw/data/Datafiniti_Amazon_Consumer_Reviews_of_Amazon_Products.csv")
-amazon_reviews <- clean_names(amazon_reviews)
+################
+### Use Data ###
+################
 
-amazon_reviews <-
-amazon_reviews %>%
-  filter(name != "Amazon 9W PowerFast Official OEM USB Charger and Power Adapter for Fire Tablets and Kindle eReaders") %>%
-  filter(name != "Amazon Fire TV with 4K Ultra HD and Alexa Voice Remote (Pendant Design) | Streaming Media Player")
-
-amazon_reviews <-
-amazon_reviews %>%
-  mutate(
-    name = case_when(
-      str_detect(name, "Fire") ~ "Fire Tablet",
-      str_detect(name, "Kindle") ~ "Kindle",
-      str_detect(name, "Echo") ~ "Echo",
-      str_detect(name, "Alexa") ~ "Echo",
-      TRUE ~ name
-    )
-  )
-
-amazon_reviews <-
-amazon_reviews %>%
-  select(name, date = reviews_date, rating = reviews_rating, helpful_votes = reviews_num_helpful, text = reviews_text, title = reviews_title)
-
-use_data(students, overwrite = TRUE)
-use_data(colour_list, overwrite = TRUE)
-use_data(starwars, overwrite = TRUE)
-use_data(temp, overwrite = TRUE)
-use_data(beer, overwrite = TRUE)
-use_data(game_of_thrones, overwrite = TRUE)
-use_data(olympics_overall_medals, overwrite = TRUE)
-use_data(whisky, overwrite = TRUE)
-use_data(chinesemeal, overwrite = TRUE)
-use_data(UK_poly, overwrite = TRUE)
-use_data(pets, overwrite = TRUE)
-use_data(cuckoo, overwrite = TRUE)
-use_data(scottish_exports, overwrite = TRUE)
-use_data(scot_exp, overwrite = TRUE)
-use_data(lotka_volterra, overwrite = TRUE)
-use_data(polydata, overwrite = TRUE)
-use_data(energy_scotland, overwrite = TRUE)
-use_data(benefits, overwrite = TRUE)
+use_data(all_deaths, overwrite = TRUE)
+use_data(amazon_reviews, overwrite = TRUE)
 use_data(backpack, overwrite = TRUE)
+use_data(bank_expense, overwrite = TRUE)
+use_data(bayestown_survey, overwrite = TRUE)
+use_data(beer, overwrite = TRUE)
+use_data(benefits, overwrite = TRUE)
+use_data(blood_pressure, overwrite = TRUE)
+use_data(car_use, overwrite = TRUE)
+use_data(chinesemeal, overwrite = TRUE)
+use_data(colour_list, overwrite = TRUE)
+use_data(comms_data, overwrite = TRUE)
+use_data(competencies, overwrite = TRUE)
+use_data(cuckoo, overwrite = TRUE)
+use_data(cycle_routes, overwrite = TRUE)
+use_data(d20_outcomes, overwrite = TRUE)
+use_data(d20x5_outcomes, overwrite = TRUE)
 use_data(data1, overwrite = TRUE)
 use_data(data2, overwrite = TRUE)
+use_data(data3, overwrite = TRUE)
+use_data(death_males, overwrite = TRUE)
+use_data(drinks_content, overwrite = TRUE)
+use_data(energy_scotland, overwrite = TRUE)
+use_data(EUbank, overwrite = TRUE)
+use_data(euro_ineq, overwrite = TRUE)
+use_data(example_psi, overwrite = TRUE)
 use_data(exercise_data, overwrite = TRUE)
-use_data(list_weights, overwrite = TRUE)
+use_data(fitness_levels, overwrite = TRUE)
+use_data(flatPrices, overwrite = TRUE)
+use_data(game_of_thrones, overwrite = TRUE)
+use_data(game_sales, overwrite = TRUE)
+use_data(got_ratings, overwrite = TRUE)
 use_data(guerry, overwrite = TRUE)
 use_data(hills2000, overwrite = TRUE)
-use_data(data3, overwrite = TRUE)
+use_data(hospital_visits, overwrite = TRUE)
+use_data(IBM_stock_price, overwrite = TRUE)
+use_data(income, overwrite = TRUE)
+use_data(inflation4, overwrite = TRUE)
+use_data(insurance, overwrite = TRUE)
+use_data(invest_alluvial, overwrite = TRUE)
+use_data(invest_lodes, overwrite = TRUE)
+use_data(invest_lodes2, overwrite = TRUE)
+use_data(iq_scores, overwrite = TRUE)
+use_data(JNJ_stock_price, overwrite = TRUE)
+use_data(late_deliveries, overwrite = TRUE)
+use_data(late_deliveries, overwrite = TRUE)
+use_data(list_weights, overwrite = TRUE)
+use_data(lotka_volterra, overwrite = TRUE)
+use_data(messy, overwrite = TRUE)
+use_data(messy_orders, overwrite = TRUE)
+use_data(milk, overwrite = TRUE)
+use_data(monthly_sales, overwrite = TRUE)
+use_data(nyc_dogs, overwrite = TRUE)
+use_data(olympics_overall_medals, overwrite = TRUE)
+use_data(pension_liabilities, overwrite = TRUE)
+use_data(pension_surplus, overwrite = TRUE)
+use_data(pets, overwrite = TRUE)
 use_data(physical_activity, overwrite = TRUE)
-use_data(volcano, overwrite = TRUE)
-use_data(bayestown_survey, overwrite = TRUE)
+use_data(playfair_denmark, overwrite = TRUE)
+use_data(polydata, overwrite = TRUE)
+use_data(population, overwrite = TRUE)
 use_data(qb_competitors, overwrite = TRUE)
 use_data(qb_device_data, overwrite = TRUE)
 use_data(qb_monthly_sales, overwrite = TRUE)
 use_data(qb_revenue_breakdown, overwrite = TRUE)
-use_data(bank_expense, overwrite = TRUE)
-use_data(competencies, overwrite = TRUE)
-use_data(EUbank, overwrite = TRUE)
-use_data(euro_ineq, overwrite = TRUE)
-use_data(inflation4, overwrite = TRUE)
-use_data(invest_alluvial, overwrite = TRUE)
-use_data(invest_lodes, overwrite = TRUE)
-use_data(invest_lodes2, overwrite = TRUE)
-use_data(late_deliveries, overwrite = TRUE)
-use_data(milk, overwrite = TRUE)
-use_data(scot_exports_2017, overwrite = TRUE)
-use_data(stonybridge, overwrite = TRUE)
-use_data(vote19_eu, overwrite = TRUE)
-use_data(death_males, overwrite = TRUE)
-use_data(flatPrices, overwrite = TRUE)
-use_data(world, overwrite = TRUE)
-use_data(temp_df, overwrite = TRUE)
-use_data(students_big, overwrite = TRUE)
-use_data(nyc_dogs, overwrite = TRUE)
-use_data(cycle_routes, overwrite = TRUE)
-use_data(playfair_denmark, overwrite = TRUE)
-use_data(blood_pressure, overwrite = TRUE)
-use_data(car_use, overwrite = TRUE)
-use_data(d20_outcomes, overwrite = TRUE)
-use_data(d20x5_outcomes, overwrite = TRUE)
-use_data(fitness_levels, overwrite = TRUE)
-use_data(pension_liabilities, overwrite = TRUE)
-use_data(pension_surplus, overwrite = TRUE)
 use_data(recovery_times, overwrite = TRUE)
-use_data(late_deliveries, overwrite = TRUE)
-use_data(table_of_numbers, overwrite = TRUE)
-use_data(monthly_sales, overwrite = TRUE)
-use_data(total_sales, overwrite = TRUE)
-use_data(got_ratings, overwrite = TRUE)
-use_data(iq_scores, overwrite = TRUE)
-use_data(school_census, overwrite = TRUE)
-use_data(all_deaths, overwrite = TRUE)
-use_data(drinks_content, overwrite = TRUE)
-use_data(hospital_visits, overwrite = TRUE)
-use_data(JNJ_stock_price, overwrite = TRUE)
-use_data(IBM_stock_price, overwrite = TRUE)
 use_data(refunds, overwrite = TRUE)
-use_data(comms_data, overwrite = TRUE)
-use_data(women_in_gov, overwrite = TRUE)
-use_data(messy, overwrite = TRUE)
-use_data(messy_orders, overwrite = TRUE)
-use_data(income, overwrite = TRUE)
-use_data(savings, overwrite = TRUE)
 use_data(salary, overwrite = TRUE)
-use_data(insurance, overwrite = TRUE)
-use_data(example_psi, overwrite = TRUE)
-use_data(game_sales, overwrite = TRUE)
-use_data(population, overwrite = TRUE)
-use_data(amazon_reviews, overwrite = TRUE)
+use_data(savings, overwrite = TRUE)
+use_data(school_census, overwrite = TRUE)
+use_data(scot_exp, overwrite = TRUE)
+use_data(scot_exports_2017, overwrite = TRUE)
+use_data(scottish_exports, overwrite = TRUE)
+use_data(starwars, overwrite = TRUE)
+use_data(stonybridge, overwrite = TRUE)
+use_data(students, overwrite = TRUE)
+use_data(students_big, overwrite = TRUE)
+use_data(table_of_numbers, overwrite = TRUE)
+use_data(temp, overwrite = TRUE)
+use_data(temp_df, overwrite = TRUE)
+use_data(total_sales, overwrite = TRUE)
+use_data(tyrell_corp_job, overwrite = TRUE)
+use_data(UK_poly, overwrite = TRUE)
+use_data(volcano, overwrite = TRUE)
+use_data(vote19_eu, overwrite = TRUE)
+use_data(whisky, overwrite = TRUE)
+use_data(women_in_gov, overwrite = TRUE)
+use_data(world, overwrite = TRUE)

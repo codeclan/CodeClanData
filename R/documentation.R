@@ -39,6 +39,10 @@ NULL
 #' @format A nested list with 4 elements
 "colour_list"
 
+#' Tyrell Corp Jobs
+#'
+#' @format A data frame
+"tyrell_corp_jobs"
 
 #' Beer
 #'
