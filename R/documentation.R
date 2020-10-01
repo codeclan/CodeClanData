@@ -10,9 +10,19 @@ NULL
 #' A small dataset with some survey information from randomly chosen students.
 #' Comes from the international census at school random sampler.
 #'
-#' @source \url{https://new.censusatschool.org.nz/tools/random-sampler/}
+#' @source \url{https://github.com/freeCodeCamp/2018-new-coder-survey}
 #' @format A data frame with 14 observations of 10 variables
 "students"
+
+
+#' New Coders
+#'
+#' A sample of data from freeCodeCamp's 2018 survey. Asks questions of new development
+#' about their background and aspirations.
+#'
+#' @source \url{https://github.com/freeCodeCamp/2018-new-coder-survey}
+#' @format A data frame
+"new_coders"
 
 
 #' Students Big

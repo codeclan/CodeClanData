@@ -121,6 +121,23 @@ load("data-raw/data/bank_expense.RData")
 ### N ###
 #########
 
+
+new_coders <- read_rds("data-raw/data/new_coders.rds")
+
+new_coders <-
+new_coders %>%
+  select(
+    job_pref,
+    last_yr_income,
+    expected_earn,
+    reasons_to_code,
+    months_programming,
+    bootcamp_attend,
+    age,
+    gender
+  ) %>%
+  drop_na()
+
 #########
 ### O ###
 #########
@@ -571,6 +588,7 @@ use_data(messy, overwrite = TRUE)
 use_data(messy_orders, overwrite = TRUE)
 use_data(milk, overwrite = TRUE)
 use_data(monthly_sales, overwrite = TRUE)
+use_data(new_coders, overwrite = TRUE)
 use_data(nyc_dogs, overwrite = TRUE)
 use_data(olympics_overall_medals, overwrite = TRUE)
 use_data(pension_liabilities, overwrite = TRUE)
