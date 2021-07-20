@@ -839,3 +839,10 @@ NULL
 #' @format A data frame
 "game_sales"
 
+
+#' State Income Data
+#'
+#' A dataset with information about incomes in states.
+#'
+#' @format A data frame
+"state_income_data"

@@ -136,7 +136,8 @@ new_coders %>%
     age,
     gender
   ) %>%
-  drop_na()
+  drop_na() %>%
+  write_csv("../../new_coders.csv")
 
 #########
 ### O ###
@@ -159,6 +160,8 @@ refunds <- read_csv("data-raw/data/refunds_info.csv", col_types = cols(party_ide
 #########
 ### S ###
 #########
+
+state_income_data <- read_csv("data-raw/data/state_income_data.csv")
 
 #########
 ### T ###
@@ -611,6 +614,7 @@ use_data(scot_exp, overwrite = TRUE)
 use_data(scot_exports_2017, overwrite = TRUE)
 use_data(scottish_exports, overwrite = TRUE)
 use_data(starwars, overwrite = TRUE)
+use_data(state_income_data, overwrite = TRUE)
 use_data(stonybridge, overwrite = TRUE)
 use_data(students, overwrite = TRUE)
 use_data(students_big, overwrite = TRUE)
