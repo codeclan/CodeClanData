@@ -4,7 +4,9 @@
 \name{volcano}
 \alias{volcano}
 \title{volcano}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 volcano
 }

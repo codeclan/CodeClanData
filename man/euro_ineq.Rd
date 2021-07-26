@@ -4,7 +4,9 @@
 \name{euro_ineq}
 \alias{euro_ineq}
 \title{euro_ineq}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 euro_ineq
 }

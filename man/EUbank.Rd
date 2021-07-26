@@ -4,7 +4,9 @@
 \name{EUbank}
 \alias{EUbank}
 \title{EUbank}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 EUbank
 }

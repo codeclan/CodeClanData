@@ -4,7 +4,9 @@
 \name{hospital_visits}
 \alias{hospital_visits}
 \title{hospital_visits}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 hospital_visits
 }

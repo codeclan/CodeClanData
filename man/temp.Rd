@@ -4,7 +4,9 @@
 \name{temp}
 \alias{temp}
 \title{Temperature}
-\format{A matrix}
+\format{
+A matrix
+}
 \usage{
 temp
 }

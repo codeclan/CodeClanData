@@ -4,7 +4,9 @@
 \name{stonybridge}
 \alias{stonybridge}
 \title{stonybridge}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 stonybridge
 }

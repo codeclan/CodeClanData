@@ -4,7 +4,9 @@
 \name{qb_revenue_breakdown}
 \alias{qb_revenue_breakdown}
 \title{QikBit Revenue Breakdown}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 qb_revenue_breakdown
 }

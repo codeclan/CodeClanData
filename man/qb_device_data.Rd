@@ -4,7 +4,9 @@
 \name{qb_device_data}
 \alias{qb_device_data}
 \title{QikBit Accelerometer Data}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 qb_device_data
 }

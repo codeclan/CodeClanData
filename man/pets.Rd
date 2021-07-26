@@ -4,7 +4,9 @@
 \name{pets}
 \alias{pets}
 \title{pets}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 pets
 }

@@ -4,7 +4,9 @@
 \name{drinks_content}
 \alias{drinks_content}
 \title{drinks_content}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 drinks_content
 }

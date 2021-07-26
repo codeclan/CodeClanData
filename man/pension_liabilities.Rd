@@ -4,7 +4,9 @@
 \name{pension_liabilities}
 \alias{pension_liabilities}
 \title{Pension Liabilities}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 pension_liabilities
 }

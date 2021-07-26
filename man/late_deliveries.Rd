@@ -4,7 +4,11 @@
 \name{late_deliveries}
 \alias{late_deliveries}
 \title{late_deliveries}
-\format{A data frame}
+\format{
+A data frame
+
+A data frame
+}
 \usage{
 late_deliveries
 

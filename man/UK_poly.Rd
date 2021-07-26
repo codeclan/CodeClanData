@@ -4,7 +4,9 @@
 \name{UK_poly}
 \alias{UK_poly}
 \title{UK_poly}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 UK_poly
 }

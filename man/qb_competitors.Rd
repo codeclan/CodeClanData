@@ -4,7 +4,9 @@
 \name{qb_competitors}
 \alias{qb_competitors}
 \title{QikBit Competitors}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 qb_competitors
 }

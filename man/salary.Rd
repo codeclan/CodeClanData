@@ -4,7 +4,9 @@
 \name{salary}
 \alias{salary}
 \title{Salaries}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 salary
 }

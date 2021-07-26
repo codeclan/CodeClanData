@@ -4,7 +4,9 @@
 \name{nyc_dogs}
 \alias{nyc_dogs}
 \title{NYC Dogs}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 nyc_dogs
 }

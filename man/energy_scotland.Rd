@@ -4,7 +4,9 @@
 \name{energy_scotland}
 \alias{energy_scotland}
 \title{energy_scotland}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 energy_scotland
 }

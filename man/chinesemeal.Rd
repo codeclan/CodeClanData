@@ -4,7 +4,9 @@
 \name{chinesemeal}
 \alias{chinesemeal}
 \title{chinesemeal}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 chinesemeal
 }

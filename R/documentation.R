@@ -846,3 +846,38 @@ NULL
 #'
 #' @format A data frame
 "state_income_data"
+
+#' Unimodal data
+#'
+#' A dataset with simulated unimodal data for teaching
+#'
+#' @format A data frame
+"unimodal"
+
+#' Bimodal data
+#'
+#' A dataset with simulated bimodal data for teaching
+#'
+#' @format A data frame
+"bimodal"
+
+#' left skewed data
+#'
+#' A dataset with simulated left skewed data for teaching
+#'
+#' @format A data frame
+"left_skewed"
+
+#' right skewed data
+#'
+#' A dataset with simulated right skewed data for teaching
+#'
+#' @format A data frame
+"right_skewed"
+
+#' heavily right skewed data
+#'
+#' A dataset with simulated heavy right skewed data for teaching
+#'
+#' @format A data frame
+"heavily_right_skewed"

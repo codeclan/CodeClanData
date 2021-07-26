@@ -4,7 +4,9 @@
 \name{competencies}
 \alias{competencies}
 \title{competencies}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 competencies
 }

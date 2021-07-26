@@ -4,7 +4,9 @@
 \name{game_of_thrones}
 \alias{game_of_thrones}
 \title{Game of Thrones}
-\format{A matrix}
+\format{
+A matrix
+}
 \usage{
 game_of_thrones
 }

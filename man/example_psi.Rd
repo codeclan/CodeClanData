@@ -4,7 +4,9 @@
 \name{example_psi}
 \alias{example_psi}
 \title{Example PSI}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 example_psi
 }

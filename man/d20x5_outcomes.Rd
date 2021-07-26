@@ -4,7 +4,9 @@
 \name{d20x5_outcomes}
 \alias{d20x5_outcomes}
 \title{5d20 Outcomes}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 d20x5_outcomes
 }

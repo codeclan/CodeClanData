@@ -4,7 +4,9 @@
 \name{school_census}
 \alias{school_census}
 \title{school_census}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 school_census
 }

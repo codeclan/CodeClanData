@@ -4,7 +4,9 @@
 \name{vote19_eu}
 \alias{vote19_eu}
 \title{VoteEU}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 vote19_eu
 }

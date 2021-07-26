@@ -4,7 +4,9 @@
 \name{IBM_stock_price}
 \alias{IBM_stock_price}
 \title{IBM_stock_price}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 IBM_stock_price
 }

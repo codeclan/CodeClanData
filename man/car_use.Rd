@@ -4,7 +4,9 @@
 \name{car_use}
 \alias{car_use}
 \title{Car Use}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 car_use
 }

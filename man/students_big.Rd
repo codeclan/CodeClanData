@@ -4,7 +4,9 @@
 \name{students_big}
 \alias{students_big}
 \title{Students Big}
-\format{A data frame}
+\format{
+A data frame
+}
 \source{
 \url{https://new.censusatschool.org.nz/tools/random-sampler/}
 }

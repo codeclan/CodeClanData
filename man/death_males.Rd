@@ -4,7 +4,9 @@
 \name{death_males}
 \alias{death_males}
 \title{death_note}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 death_males
 }

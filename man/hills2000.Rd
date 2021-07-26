@@ -4,7 +4,9 @@
 \name{hills2000}
 \alias{hills2000}
 \title{hills2000}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 hills2000
 }

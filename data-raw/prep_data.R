@@ -61,6 +61,9 @@ load("data-raw/data/bank_expense.RData")
 
 # Blood Pressure
 
+# Bimodal 
+bimodal <- read_csv("data-raw/data/bimodal.csv")
+
 #########
 ### C ###
 #########
@@ -97,6 +100,8 @@ load("data-raw/data/bank_expense.RData")
 ### H ###
 #########
 
+heavily_right_skewed <- read_csv("data-raw/data/heavily_right_skewed.csv")
+
 #########
 ### I ###
 #########
@@ -112,6 +117,8 @@ load("data-raw/data/bank_expense.RData")
 #########
 ### L ###
 #########
+
+left_skewed <- read_csv("data-raw/data/leftskew.csv")
 
 #########
 ### M ###
@@ -158,6 +165,8 @@ new_coders %>%
 
 refunds <- read_csv("data-raw/data/refunds_info.csv", col_types = cols(party_ideology4 = col_character()))
 
+right_skewed <- read_csv("data-raw/data/rightskew.csv")
+
 #########
 ### S ###
 #########
@@ -173,6 +182,8 @@ tyrell_corp_jobs <- read_csv("data-raw/data/TyrellCorpJobs.csv")
 #########
 ### U ###
 #########
+
+unimodal <- read_csv("data-raw/data/unimodal.csv")
 
 #########
 ### V ###
@@ -623,10 +634,16 @@ use_data(table_of_numbers, overwrite = TRUE)
 use_data(temp, overwrite = TRUE)
 use_data(temp_df, overwrite = TRUE)
 use_data(total_sales, overwrite = TRUE)
-use_data(tyrell_corp_job, overwrite = TRUE)
+use_data(tyrell_corp_jobs, overwrite = TRUE)
 use_data(UK_poly, overwrite = TRUE)
 use_data(volcano, overwrite = TRUE)
 use_data(vote19_eu, overwrite = TRUE)
 use_data(whisky, overwrite = TRUE)
 use_data(women_in_gov, overwrite = TRUE)
 use_data(world, overwrite = TRUE)
+use_data(unimodal, overwrite = TRUE)
+use_data(right_skewed, overwrite = TRUE)
+use_data(left_skewed, overwrite = TRUE)
+use_data(heavily_right_skewed, overwrite = TRUE)
+use_data(bimodal, overwrite = TRUE)
+   

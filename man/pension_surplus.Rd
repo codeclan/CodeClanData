@@ -4,7 +4,9 @@
 \name{pension_surplus}
 \alias{pension_surplus}
 \title{Pension Surplus}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 pension_surplus
 }

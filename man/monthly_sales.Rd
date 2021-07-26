@@ -4,7 +4,9 @@
 \name{monthly_sales}
 \alias{monthly_sales}
 \title{Monthly Sales}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 monthly_sales
 }

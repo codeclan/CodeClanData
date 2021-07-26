@@ -4,7 +4,9 @@
 \name{temp_df}
 \alias{temp_df}
 \title{Temperature Data Frame}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 temp_df
 }

@@ -4,7 +4,9 @@
 \name{messy}
 \alias{messy}
 \title{Messy}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 messy
 }

@@ -4,7 +4,9 @@
 \name{scottish_exports}
 \alias{scottish_exports}
 \title{scottish_exports}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 scottish_exports
 }

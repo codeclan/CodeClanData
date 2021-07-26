@@ -4,7 +4,9 @@
 \name{colour_list}
 \alias{colour_list}
 \title{Colour List}
-\format{A nested list with 4 elements}
+\format{
+A nested list with 4 elements
+}
 \usage{
 colour_list
 }

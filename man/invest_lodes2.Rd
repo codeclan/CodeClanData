@@ -4,7 +4,9 @@
 \name{invest_lodes2}
 \alias{invest_lodes2}
 \title{invest_lodes2}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 invest_lodes2
 }

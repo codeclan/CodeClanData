@@ -4,7 +4,9 @@
 \name{flatPrices}
 \alias{flatPrices}
 \title{flatPrices}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 flatPrices
 }

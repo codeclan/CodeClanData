@@ -4,7 +4,9 @@
 \name{JNJ_stock_price}
 \alias{JNJ_stock_price}
 \title{JNJ_stock_price}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 JNJ_stock_price
 }

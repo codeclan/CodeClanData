@@ -4,7 +4,9 @@
 \name{milk}
 \alias{milk}
 \title{milk}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 milk
 }

@@ -4,7 +4,9 @@
 \name{refunds}
 \alias{refunds}
 \title{refunds}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 refunds
 }

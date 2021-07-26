@@ -4,7 +4,9 @@
 \name{list_weights}
 \alias{list_weights}
 \title{list_weights}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 list_weights
 }

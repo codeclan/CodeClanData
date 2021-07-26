@@ -4,7 +4,9 @@
 \name{blood_pressure}
 \alias{blood_pressure}
 \title{Blood Pressure}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 blood_pressure
 }

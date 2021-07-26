@@ -4,7 +4,9 @@
 \name{lotka_volterra}
 \alias{lotka_volterra}
 \title{lotka_volterra}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 lotka_volterra
 }

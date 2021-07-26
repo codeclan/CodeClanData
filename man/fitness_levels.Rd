@@ -4,7 +4,9 @@
 \name{fitness_levels}
 \alias{fitness_levels}
 \title{Fitness Levels}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 fitness_levels
 }

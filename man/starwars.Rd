@@ -4,7 +4,9 @@
 \name{starwars}
 \alias{starwars}
 \title{Starwars}
-\format{A list with 10 elements}
+\format{
+A list with 10 elements
+}
 \source{
 \url{https://swapi.co/}
 }

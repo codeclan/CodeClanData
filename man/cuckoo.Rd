@@ -4,7 +4,9 @@
 \name{cuckoo}
 \alias{cuckoo}
 \title{cuckoo}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 cuckoo
 }

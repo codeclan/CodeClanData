@@ -4,7 +4,9 @@
 \name{savings}
 \alias{savings}
 \title{Savings}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 savings
 }

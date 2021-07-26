@@ -4,7 +4,9 @@
 \name{physical_activity}
 \alias{physical_activity}
 \title{physical_activity}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 physical_activity
 }

@@ -4,7 +4,9 @@
 \name{world}
 \alias{world}
 \title{world}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 world
 }

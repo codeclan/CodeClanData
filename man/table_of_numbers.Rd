@@ -4,7 +4,9 @@
 \name{table_of_numbers}
 \alias{table_of_numbers}
 \title{Table of Numbers}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 table_of_numbers
 }

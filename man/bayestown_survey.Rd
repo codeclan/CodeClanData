@@ -4,7 +4,9 @@
 \name{bayestown_survey}
 \alias{bayestown_survey}
 \title{bayestown_survey}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 bayestown_survey
 }

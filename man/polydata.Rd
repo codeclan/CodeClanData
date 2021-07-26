@@ -4,7 +4,9 @@
 \name{polydata}
 \alias{polydata}
 \title{polydata}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 polydata
 }

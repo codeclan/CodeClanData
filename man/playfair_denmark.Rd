@@ -4,7 +4,9 @@
 \name{playfair_denmark}
 \alias{playfair_denmark}
 \title{Playfair's Denmark Data}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 playfair_denmark
 }

@@ -4,7 +4,9 @@
 \name{exercise_data}
 \alias{exercise_data}
 \title{exercise_data}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 exercise_data
 }

@@ -4,7 +4,9 @@
 \name{data2}
 \alias{data2}
 \title{data2}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 data2
 }

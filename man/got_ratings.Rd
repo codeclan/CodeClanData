@@ -4,7 +4,9 @@
 \name{got_ratings}
 \alias{got_ratings}
 \title{Game of Thrones Ratings}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 got_ratings
 }

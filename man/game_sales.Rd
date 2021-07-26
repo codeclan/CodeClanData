@@ -4,7 +4,9 @@
 \name{game_sales}
 \alias{game_sales}
 \title{Video Game Sales Data}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 game_sales
 }

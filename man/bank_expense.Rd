@@ -4,7 +4,9 @@
 \name{bank_expense}
 \alias{bank_expense}
 \title{bank_expense}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 bank_expense
 }

@@ -4,7 +4,9 @@
 \name{women_in_gov}
 \alias{women_in_gov}
 \title{women_in_gov}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 women_in_gov
 }

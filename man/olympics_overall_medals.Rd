@@ -4,7 +4,9 @@
 \name{olympics_overall_medals}
 \alias{olympics_overall_medals}
 \title{Overall Olympics Medals}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 olympics_overall_medals
 }

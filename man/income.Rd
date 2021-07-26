@@ -4,7 +4,9 @@
 \name{income}
 \alias{income}
 \title{income}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 income
 }

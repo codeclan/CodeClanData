@@ -4,7 +4,9 @@
 \name{total_sales}
 \alias{total_sales}
 \title{Total sales}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 total_sales
 }

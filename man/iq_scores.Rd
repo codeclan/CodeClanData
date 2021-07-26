@@ -4,7 +4,9 @@
 \name{iq_scores}
 \alias{iq_scores}
 \title{IQ Scores}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 iq_scores
 }

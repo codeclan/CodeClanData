@@ -3,7 +3,6 @@
 \docType{package}
 \name{CodeClanData}
 \alias{CodeClanData}
-\alias{CodeClanData-package}
 \title{Data for Data Analysis Course}
 \description{
 This package contains datasets for use with the Data Analysis course at Code Clan.

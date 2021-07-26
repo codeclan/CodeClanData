@@ -4,7 +4,9 @@
 \name{scot_exp}
 \alias{scot_exp}
 \title{scot_exp}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 scot_exp
 }

@@ -4,7 +4,9 @@
 \name{qb_monthly_sales}
 \alias{qb_monthly_sales}
 \title{QikBit Monthly Figures}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 qb_monthly_sales
 }

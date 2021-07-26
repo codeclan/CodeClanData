@@ -4,7 +4,9 @@
 \name{inflation4}
 \alias{inflation4}
 \title{inflation4}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 inflation4
 }

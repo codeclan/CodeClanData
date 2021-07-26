@@ -4,7 +4,9 @@
 \name{messy_orders}
 \alias{messy_orders}
 \title{customer orders}
-\format{A data frame}
+\format{
+A data frame
+}
 \usage{
 messy_orders
 }

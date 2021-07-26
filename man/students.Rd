@@ -4,9 +4,11 @@
 \name{students}
 \alias{students}
 \title{Students}
-\format{A data frame with 14 observations of 10 variables}
+\format{
+A data frame with 14 observations of 10 variables
+}
 \source{
-\url{https://new.censusatschool.org.nz/tools/random-sampler/}
+\url{https://github.com/freeCodeCamp/2018-new-coder-survey}
 }
 \usage{
 students
