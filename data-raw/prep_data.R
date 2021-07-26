@@ -121,6 +121,7 @@ load("data-raw/data/bank_expense.RData")
 ### N ###
 #########
 
+# New coders
 
 new_coders <- read_rds("data-raw/data/new_coders.rds")
 
