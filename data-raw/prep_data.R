@@ -300,9 +300,6 @@ late_deliveries <-
 # left_skewed
 left_skewed <- read_csv("data-raw/data/leftskew.csv")
 
-# list_weights - see exercise_data
-# list_weights seems to be missing
-
 # lotka_volterra
 load("data-raw/data/lotka_volterra.Rdata")
 
@@ -663,7 +660,6 @@ use_data(energy_scotland, overwrite = TRUE)
 use_data(EUbank, overwrite = TRUE)
 use_data(euro_ineq, overwrite = TRUE)
 use_data(example_psi, overwrite = TRUE)
-use_data(exercise_data, overwrite = TRUE)
 use_data(fitness_levels, overwrite = TRUE)
 use_data(flatPrices, overwrite = TRUE)
 use_data(game_of_thrones, overwrite = TRUE)
@@ -685,7 +681,6 @@ use_data(JNJ_stock_price, overwrite = TRUE)
 use_data(late_deliveries, overwrite = TRUE)
 use_data(late_deliveries, overwrite = TRUE)
 use_data(left_skewed, overwrite = TRUE)
-use_data(list_weights, overwrite = TRUE)
 use_data(lotka_volterra, overwrite = TRUE)
 use_data(messy, overwrite = TRUE)
 use_data(messy_orders, overwrite = TRUE)

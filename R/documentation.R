@@ -292,12 +292,6 @@ NULL
 #' @format A data frame
 "example_psi"
 
-#' exercise_data
-#'
-#' exercise_data
-#'
-#' @format A data frame
-"exercise_data"
 
 #########
 ### F ###
