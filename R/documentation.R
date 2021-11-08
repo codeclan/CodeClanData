@@ -5,54 +5,43 @@
 #' @name CodeClanData
 NULL
 
-#' Students
-#'
-#' A small dataset with some survey information from randomly chosen students.
-#' Comes from the international census at school random sampler.
-#'
-#' @source \url{https://github.com/freeCodeCamp/2018-new-coder-survey}
-#' @format A data frame with 14 observations of 10 variables
-"students"
+#########
+### A ###
+#########
 
-
-#' New Coders
+#' all_deaths
 #'
-#' A sample of data from freeCodeCamp's 2018 survey. Asks questions of new development
-#' about their background and aspirations.
-#'
-#' @source \url{https://github.com/freeCodeCamp/2018-new-coder-survey}
-#' @format A data frame
-"new_coders"
-
-
-#' Students Big
-#'
-#' A larger dataset with information from the student census. This time only for UK students.
-#'
-#' @source \url{https://new.censusatschool.org.nz/tools/random-sampler/}
-#' @format A data frame
-"students_big"
-
-#' Starwars
-#'
-#' An extract of the data available from the Star Wars API.
-#' Information on 10 characters from Star Wars.
-#'
-#' @source \url{https://swapi.co/}
-#' @format A list with 10 elements
-"starwars"
-
-#' Colour List
-#'
-#' A dataset with colour information (invented).
-#'
-#' @format A nested list with 4 elements
-"colour_list"
-
-#' Tyrell Corp Jobs
+#' Game of Thrones Deaths
+#' https://www.kaggle.com/mylesoneill/game-of-thrones#character-deaths.csv
 #'
 #' @format A data frame
-"tyrell_corp_jobs"
+"all_deaths"
+
+#########
+### B ###
+#########
+
+#' Backpack Weight and Back Problems Data
+#'
+#' A dataset looking at the weight of backpack carried by higher education students and back problems.
+#'
+#' @format A data frame
+"backpack"
+
+#' bank_expense
+#'
+#' Selected items from large bank's profit/loss statement
+#'
+#' @format A data frame
+"bank_expense"
+
+
+#' bayestown_survey
+#'
+#' bayestown_survey
+#'
+#' @format A data frame
+"bayestown_survey"
 
 #' Beer
 #'
@@ -63,109 +52,6 @@ NULL
 #'
 #' @format A data frame
 "beer"
-
-#' Temperature
-#'
-#' A matrix which contains the maximum temperature for each month in Scotland
-#' over 106 years (1910 from 2015). Each row corresponds to a year and each
-#' column to a month (January to December).
-#'
-#' @format A matrix
-"temp"
-
-#' Temperature Data Frame
-#'
-#' The same data available in temp, but in a long data frame.
-#'
-#' @format A data frame
-"temp_df"
-
-#' Game of Thrones
-#'
-#' Data on about the book 'A Game of Thrones', including names
-#' and genders for all the characters.
-#'
-#' @format A matrix
-"game_of_thrones"
-
-#' Overall Olympics Medals
-#'
-#' The overall count of Olympic medals in both the summer and winter games.
-#' From years 1896 to 2016.
-#' Data from: https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results/downloads/120-years-of-olympic-history-athletes-and-results.zip/2
-#'
-#' @format A data frame
-"olympics_overall_medals"
-
-#' whisky
-#'
-#' Scottish whisky distilleries
-#'
-#' @format A data frame
-"whisky"
-
-#' chinesemeal
-#'
-#' Chinese Meals
-#'
-#' @format A data frame
-"chinesemeal"
-
-#' UK_poly
-#'
-#' UK_poly
-#'
-#' @format A data frame
-"UK_poly"
-
-#' pets
-#'
-#' pets
-#'
-#' @format A data frame
-"pets"
-
-#' cuckoo
-#'
-#' cuckoo
-#'
-#' @format A data frame
-"cuckoo"
-
-#' scottish_exports
-#'
-#' scottish_exports
-#'
-#' @format A data frame
-"scottish_exports"
-
-#' scot_exp
-#'
-#' scot_exp
-#'
-#' @format A data frame
-"scot_exp"
-
-#' lotka_volterra
-#'
-#' lotka_volterra
-#'
-#' @format A data frame
-"lotka_volterra"
-
-#' polydata
-#'
-#' polydata
-#'
-#' @format A data frame
-"polydata"
-
-#' energy_scotland
-#'
-#' energy_scotland
-#'
-#' @format A data frame
-"energy_scotland"
 
 
 #' Unemployement of Blue Collar Workers
@@ -248,12 +134,93 @@ NULL
 #' "benefits"
 "benefits"
 
-#' Backpack Weight and Back Problems Data
+#' Bimodal data
 #'
-#' A dataset looking at the weight of backpack carried by higher education students and back problems.
+#' A dataset with simulated bimodal data for teaching
 #'
 #' @format A data frame
-"backpack"
+"bimodal"
+
+#' Blood Pressure
+#'
+#' Systolic Blood pressure in mm/hg vs. daily saturated fat intake in mg for 25 subjects.
+#'
+#' @format A data frame
+"blood_pressure"
+
+
+#########
+### C ###
+#########
+
+#' Car Use
+#'
+#' Car use, population and SO2 concentration in air in unidentified towns
+#'
+#' @format A data frame
+"car_use"
+
+#' chinesemeal
+#'
+#' Chinese Meals
+#'
+#' @format A data frame
+"chinesemeal"
+
+#' Colour List
+#'
+#' A dataset with colour information (invented).
+#'
+#' @format A nested list with 4 elements
+"colour_list"
+
+#' competencies
+#'
+#' Assessment of 4 widget companies' core competencies
+#'
+#' @format A data frame
+"competencies"
+
+#' comms_data
+#'
+#' Telecom Data
+#'
+#'
+#' @format A data frame
+"comms_data"
+
+#' cuckoo
+#'
+#' cuckoo
+#'
+#' @format A data frame
+"cuckoo"
+
+#' Cycle Routes
+#'
+#' Data on some Edinburgh cycle routes.
+#'
+#'
+#' @format A list of data frames
+"cycle_routes"
+
+#########
+### D ###
+#########
+
+#' d20 Outcomes
+#'
+#' The outcomes from rolling a 20 sided dice 201 times.
+#'
+#' @format A data frame
+"d20_outcomes"
+
+#' 5d20 Outcomes
+#'
+#' The outcomes from rolling five 20 sided dice, and adding up the scores, 1001 times.
+#'
+#' @format A data frame
+"d20x5_outcomes"
 
 #' data1
 #'
@@ -269,6 +236,62 @@ NULL
 #' @format A data frame
 "data2"
 
+#' data3
+#'
+#' data3
+#'
+#' @format A data frame
+"data3"
+
+#' death_note
+#'
+#' Main causes of death in UK males in 2016
+#'
+#' @format A data frame
+"death_males"
+
+#' drinks_content
+#'
+#' Starbuck calorie dataset
+#' https://www.kaggle.com/starbucks/starbucks-menu
+#'
+#' @format A data frame
+"drinks_content"
+
+#########
+### E ###
+#########
+
+#' energy_scotland
+#'
+#' energy_scotland
+#'
+#' @format A data frame
+"energy_scotland"
+
+#' EUbank
+#'
+#' Banking crises in European countries 1800-2010
+#'
+#' @format A data frame
+"EUbank"
+
+#' euro_ineq
+#'
+#' Volatility of GDP, Gini coefficient (measure of inequality) and percentage
+#' of GDP attributable to services for 17 European countries.
+#'
+#' @format A data frame
+"euro_ineq"
+
+#' Example PSI
+#'
+#' Example of PSI data
+#'
+#'
+#' @format A data frame
+"example_psi"
+
 #' exercise_data
 #'
 #' exercise_data
@@ -276,12 +299,71 @@ NULL
 #' @format A data frame
 "exercise_data"
 
-#' list_weights
+#########
+### F ###
+#########
+
+#' Fitness Levels
 #'
-#' list_weights
+#' Aerobic fitness levels of school children in different activity groups, over different ages.
 #'
 #' @format A data frame
-"list_weights"
+"fitness_levels"
+
+#' flatPrices
+#'
+#' Estimated average flat prices and monthly rents in Edinburgh 2011-2019
+#'
+#' @format A data frame
+"flatPrices"
+
+#########
+### G ###
+#########
+
+#' Game of Thrones
+#'
+#' Data on about the book 'A Game of Thrones', including names
+#' and genders for all the characters.
+#'
+#' @format A matrix
+"game_of_thrones"
+
+#' Video Game Sales Data
+#'
+#' Global game sales data
+#'
+#' name            : Title of the game
+#'
+#' genre           : Type of game
+#'
+#' year_of_release : Year the game was released
+#'
+#' publisher       : Publisher of game
+#'
+#' sales           : Total global sales, in millions
+#'
+#' critic_score    : Critics review score (from 0 to 100) from Metacritic
+#'
+#' user_score      : Users review score (from 0 to 10) from Metacritic
+#'
+#' developer       : Studio that created the game
+#'
+#' rating          : American ESRB rating for the game
+#'
+#' platform        : Console the game runs on
+#'
+#'
+#' @format A data frame
+"game_sales"
+
+#' Game of Thrones Ratings
+#'
+#' The IMDB ratings for Game of Thrones, season 1 to 8, by episode.
+#'
+#'
+#' @format A data frame
+"got_ratings"
 
 #' Data from A.-M. Guerry, "Essay on the Moral Statistics of France"
 #'
@@ -367,6 +449,17 @@ NULL
 #'
 "guerry"
 
+#########
+### H ###
+#########
+
+#' heavily right skewed data
+#'
+#' A dataset with simulated heavy right skewed data for teaching
+#'
+#' @format A data frame
+"heavily_right_skewed"
+
 #' hills2000
 #'
 #' hills2000
@@ -374,90 +467,33 @@ NULL
 #' @format A data frame
 "hills2000"
 
-#' data3
+#' hospital_visits
 #'
-#' data3
+#' Reasons people were admitted to hospital between 1993 and 1998.
+#' Purposely messy dataset
 #'
 #' @format A data frame
-"data3"
+"hospital_visits"
 
-#' physical_activity
-#'
-#' physical_activity
-#'
-#' @format A data frame
-"physical_activity"
+#########
+### I ###
+#########
 
-#' volcano
+#' IBM_stock_price
 #'
-#' volcano
+#' IBM stock prices
+#'
 #'
 #' @format A data frame
-"volcano"
+"IBM_stock_price"
 
-#' bayestown_survey
+#' income
 #'
-#' bayestown_survey
-#'
-#' @format A data frame
-"bayestown_survey"
-
-#' QikBit Revenue Breakdown
-#'
-#' 2019 Sales by product group for (fictional company) QikBit
+#' Income info for different religious groups.
+#' Invented data.
 #'
 #' @format A data frame
-"qb_revenue_breakdown"
-
-#' QikBit Monthly Figures
-#'
-#' Aug 2018 - Jul 2019 revenue and costs for QikBit, plus sales for single product line
-#'
-#' @format A data frame
-"qb_monthly_sales"
-
-#' QikBit Competitors
-#'
-#' 2015-2019 Revenue for QikBit's competitors
-#'
-#' @format A data frame
-"qb_competitors"
-
-#' QikBit Accelerometer Data
-#'
-#' Comparative accelerometer data for 4 devices and 5 individuals over a single day
-#'
-#' @format A data frame
-"qb_device_data"
-
-#' bank_expense
-#'
-#' Selected items from large bank's profit/loss statement
-#'
-#' @format A data frame
-"bank_expense"
-
-#' competencies
-#'
-#' Assessment of 4 widget companies' core competencies
-#'
-#' @format A data frame
-"competencies"
-
-#' EUbank
-#'
-#' Banking crises in European countries 1800-2010
-#'
-#' @format A data frame
-"EUbank"
-
-#' euro_ineq
-#'
-#' Volatility of GDP, Gini coefficient (measure of inequality) and percentage
-#' of GDP attributable to services for 17 European countries.
-#'
-#' @format A data frame
-"euro_ineq"
+"income"
 
 #' inflation4
 #'
@@ -488,188 +524,6 @@ NULL
 #' @format A data frame
 "invest_lodes2"
 
-#' late_deliveries
-#'
-#' Number of late deliveries over 12 calendar months for fictional company
-#'
-#' @format A data frame
-"late_deliveries"
-
-#' milk
-#'
-#' Composition of mammal's milk
-#'
-#' @format A data frame
-"milk"
-
-#' scot_exports_2017
-#'
-#' Scottish exports by sector (and sub-sector) in 2017
-#'
-#' @format A data frame
-"scot_exports_2017"
-
-#' stonybridge
-#'
-#' Words from Stonybridge promotion
-#'
-#' @format A data frame
-"stonybridge"
-
-#' VoteEU
-#'
-#' Two way table - vote in 2016 EU referendum and 2019 voting intention
-#' Converted to ggplot2 layout
-#'
-#' @format A data frame
-"vote19_eu"
-
-#' death_note
-#'
-#' Main causes of death in UK males in 2016
-#'
-#' @format A data frame
-"death_males"
-
-#' flatPrices
-#'
-#' Estimated average flat prices and monthly rents in Edinburgh 2011-2019
-#'
-#' @format A data frame
-"flatPrices"
-
-#' world
-#'
-#' World map combined with data from Global Attitudes Survey 2017
-#'
-#' @format A data frame
-"world"
-
-
-#' NYC Dogs
-#'
-#' A dataset with all the dogs registered in New York City.
-#'
-#' Adapted from: https://fusiontables.google.com/data?docid=1pKcxc8kzJbBVzLu_kgzoAMzqYhZyUhtScXjB0BQ#rows:id=1
-#'
-#' @format A data frame
-"nyc_dogs"
-
-
-#' Cycle Routes
-#'
-#' Data on some Edinburgh cycle routes.
-#'
-#'
-#' @format A list of data frames
-"cycle_routes"
-
-
-#' Playfair's Denmark Data
-#'
-#' @format A data frame
-"playfair_denmark"
-
-
-#' Blood Pressure
-#'
-#' Systolic Blood pressure in mm/hg vs. daily saturated fat intake in mg for 25 subjects.
-#'
-#' @format A data frame
-"blood_pressure"
-
-#' Car Use
-#'
-#' Car use, population and SO2 concentration in air in unidentified towns
-#'
-#' @format A data frame
-"car_use"
-
-#' d20 Outcomes
-#'
-#' The outcomes from rolling a 20 sided dice 201 times.
-#'
-#' @format A data frame
-"d20_outcomes"
-
-#' 5d20 Outcomes
-#'
-#' The outcomes from rolling five 20 sided dice, and adding up the scores, 1001 times.
-#'
-#' @format A data frame
-"d20x5_outcomes"
-
-#' Fitness Levels
-#'
-#' Aerobic fitness levels of school children in different activity groups, over different ages.
-#'
-#' @format A data frame
-"fitness_levels"
-
-#' Late Deliveries
-#'
-#' Number of late deliveries each month.
-#'
-#' @format A data frame
-"late_deliveries"
-
-#' Pension Liabilities
-#'
-#' Composition of liabilities (£m) of ABC pension scheme.
-#'
-#' @format A data frame
-"pension_liabilities"
-
-#' Pension Surplus
-#'
-#' Surplus in ABC pension scheme.
-#'
-#' @format A data frame
-"pension_surplus"
-
-#' Recovery times
-#'
-#' Average Recovery Times under Treatments A and B, and Control.
-#'
-#'  @format A data frame
-"recovery_times"
-
-#' Table of Numbers
-#'
-#' A randomly generated table of 100 numbers. Numbers come from a Poisson distribution
-#' with mean 3.
-#'
-#' @format A data frame
-"table_of_numbers"
-
-
-#' Monthly Sales
-#'
-#' An invented dataset with monthly sales across 7 branches.
-#'
-#' A summary of this dataset can be found in `total_sales`.
-#'
-#' @format A data frame
-"monthly_sales"
-
-#' Total sales
-#'
-#' An invented dataset with total sales across 7 branches.
-#'
-#' A monthly breakdown of this dataset can be found in `monthly_sales`.
-#'
-#' @format A data frame
-"total_sales"
-
-
-#' Game of Thrones Ratings
-#'
-#' The IMDB ratings for Game of Thrones, season 1 to 8, by episode.
-#'
-#'
-#' @format A data frame
-"got_ratings"
-
 #' IQ Scores
 #'
 #' The IQ Scores for 5 people, measured across 3 different tests.
@@ -678,37 +532,9 @@ NULL
 #' @format A data frame
 "iq_scores"
 
-#' school_census
-#'
-#' A New Zealand school census
-#' https://new.censusatschool.org.nz/about/
-#'
-#' @format A data frame
-"school_census"
-
-#' all_deaths
-#'
-#' Game of Thrones Deaths
-#' https://www.kaggle.com/mylesoneill/game-of-thrones#character-deaths.csv
-#'
-#' @format A data frame
-"all_deaths"
-
-#' drinks_content
-#'
-#' Starbuck calorie dataset
-#' https://www.kaggle.com/starbucks/starbucks-menu
-#'
-#' @format A data frame
-"drinks_content"
-
-#' hospital_visits
-#'
-#' Reasons people were admitted to hospital between 1993 and 1998.
-#' Purposely messy dataset
-#'
-#' @format A data frame
-"hospital_visits"
+#########
+### J ###
+#########
 
 #' JNJ_stock_price
 #'
@@ -718,37 +544,40 @@ NULL
 #' @format A data frame
 "JNJ_stock_price"
 
-#' IBM_stock_price
-#'
-#' IBM stock prices
-#'
-#'
-#' @format A data frame
-"IBM_stock_price"
+#########
+### K ###
+#########
 
-#' refunds
-#'
-#' Refunds for Brazils House of Deputies
-#' https://www.kaggle.com/epattaro/brazils-house-of-deputies-reimbursements
-#'
-#' @format A data frame
-"refunds"
 
-#' comms_data
-#'
-#' Telecom Data
-#'
-#'
-#' @format A data frame
-"comms_data"
+#########
+### L ###
+#########
 
-#' women_in_gov
+#' late_deliveries
 #'
-#' Women in Parliament
-#' https://data.worldbank.org/indicator/SG.GEN.PARL.ZS
+#' Number of late deliveries over 12 calendar months for fictional company
 #'
 #' @format A data frame
-"women_in_gov"
+"late_deliveries"
+
+#' left skewed data
+#'
+#' A dataset with simulated left skewed data for teaching
+#'
+#' @format A data frame
+"left_skewed"
+
+#' lotka_volterra
+#'
+#' lotka_volterra
+#'
+#' @format A data frame
+"lotka_volterra"
+
+
+#########
+### M ###
+#########
 
 #' Messy
 #'
@@ -766,31 +595,101 @@ NULL
 #' @format A data frame
 "messy_orders"
 
-#' income
+#' milk
 #'
-#' Income info for different religious groups.
-#' Invented data.
-#'
-#' @format A data frame
-"income"
-
-
-#' Savings
-#'
-#' Invented data about how much money people have saved.
-#'
+#' Composition of mammal's milk
 #'
 #' @format A data frame
-"savings"
+"milk"
 
-
-#' Salaries
+#' Monthly Sales
 #'
-#' Inveted data about job location, job type and salary.
+#' An invented dataset with monthly sales across 7 branches.
 #'
+#' A summary of this dataset can be found in `total_sales`.
 #'
 #' @format A data frame
-"salary"
+"monthly_sales"
+
+
+#########
+### N ###
+#########
+
+#' New Coders
+#'
+#' A sample of data from freeCodeCamp's 2018 survey. Asks questions of new development
+#' about their background and aspirations.
+#'
+#' @source \url{https://github.com/freeCodeCamp/2018-new-coder-survey}
+#' @format A data frame
+"new_coders"
+
+#' NYC Dogs
+#'
+#' A dataset with all the dogs registered in New York City.
+#'
+#' Adapted from: https://fusiontables.google.com/data?docid=1pKcxc8kzJbBVzLu_kgzoAMzqYhZyUhtScXjB0BQ#rows:id=1
+#'
+#' @format A data frame
+"nyc_dogs"
+
+#########
+### O ###
+#########
+
+#' Overall Olympics Medals
+#'
+#' The overall count of Olympic medals in both the summer and winter games.
+#' From years 1896 to 2016.
+#' Data from: https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results/downloads/120-years-of-olympic-history-athletes-and-results.zip/2
+#'
+#' @format A data frame
+"olympics_overall_medals"
+
+#########
+### P ###
+#########
+
+#' pets
+#'
+#' pets
+#'
+#' @format A data frame
+"pets"
+
+#' Pension Liabilities
+#'
+#' Composition of liabilities (£m) of ABC pension scheme.
+#'
+#' @format A data frame
+"pension_liabilities"
+
+#' Pension Surplus
+#'
+#' Surplus in ABC pension scheme.
+#'
+#' @format A data frame
+"pension_surplus"
+
+#' physical_activity
+#'
+#' physical_activity
+#'
+#' @format A data frame
+"physical_activity"
+
+#' Playfair's Denmark Data
+#'
+#' @format A data frame
+"playfair_denmark"
+
+#' polydata
+#'
+#' polydata
+#'
+#' @format A data frame
+"polydata"
 
 #' Population
 #'
@@ -801,72 +700,57 @@ NULL
 "population"
 
 
+#########
+### Q ###
+#########
 
-#' Example PSI
+#' QikBit Competitors
 #'
-#' Example of PSI data
-#'
+#' 2015-2019 Revenue for QikBit's competitors
 #'
 #' @format A data frame
-"example_psi"
+"qb_competitors"
 
-
-#' Video Game Sales Data
+#' QikBit Accelerometer Data
 #'
-#' Global game sales data
-#'
-#' name            : Title of the game
-#'
-#' genre           : Type of game
-#'
-#' year_of_release : Year the game was released
-#'
-#' publisher       : Publisher of game
-#'
-#' sales           : Total global sales, in millions
-#'
-#' critic_score    : Critics review score (from 0 to 100) from Metacritic
-#'
-#' user_score      : Users review score (from 0 to 10) from Metacritic
-#'
-#' developer       : Studio that created the game
-#'
-#' rating          : American ESRB rating for the game
-#'
-#' platform        : Console the game runs on
-#'
+#' Comparative accelerometer data for 4 devices and 5 individuals over a single day
 #'
 #' @format A data frame
-"game_sales"
+"qb_device_data"
 
-
-#' State Income Data
+#' QikBit Monthly Figures
 #'
-#' A dataset with information about incomes in states.
+#' Aug 2018 - Jul 2019 revenue and costs for QikBit, plus sales for single product line
 #'
 #' @format A data frame
-"state_income_data"
+"qb_monthly_sales"
 
-#' Unimodal data
+#' QikBit Revenue Breakdown
 #'
-#' A dataset with simulated unimodal data for teaching
+#' 2019 Sales by product group for (fictional company) QikBit
 #'
 #' @format A data frame
-"unimodal"
+"qb_revenue_breakdown"
 
-#' Bimodal data
+
+#########
+### R ###
+#########
+
+#' Recovery times
 #'
-#' A dataset with simulated bimodal data for teaching
+#' Average Recovery Times under Treatments A and B, and Control.
+#'
+#'  @format A data frame
+"recovery_times"
+
+#' refunds
+#'
+#' Refunds for Brazils House of Deputies
+#' https://www.kaggle.com/epattaro/brazils-house-of-deputies-reimbursements
 #'
 #' @format A data frame
-"bimodal"
-
-#' left skewed data
-#'
-#' A dataset with simulated left skewed data for teaching
-#'
-#' @format A data frame
-"left_skewed"
+"refunds"
 
 #' right skewed data
 #'
@@ -875,9 +759,200 @@ NULL
 #' @format A data frame
 "right_skewed"
 
-#' heavily right skewed data
+
+#########
+### S ###
+#########
+
+#' Salaries
 #'
-#' A dataset with simulated heavy right skewed data for teaching
+#' Inveted data about job location, job type and salary.
+#'
 #'
 #' @format A data frame
-"heavily_right_skewed"
+"salary"
+
+#' Savings
+#'
+#' Invented data about how much money people have saved.
+#'
+#'
+#' @format A data frame
+"savings"
+
+#' school_census
+#'
+#' A New Zealand school census
+#' https://new.censusatschool.org.nz/about/
+#'
+#' @format A data frame
+"school_census"
+
+#' scottish_exports
+#'
+#' scottish_exports
+#'
+#' @format A data frame
+"scottish_exports"
+
+#' Starwars
+#'
+#' An extract of the data available from the Star Wars API.
+#' Information on 10 characters from Star Wars.
+#'
+#' @source \url{https://swapi.co/}
+#' @format A list with 10 elements
+"starwars"
+
+#' State Income Data
+#'
+#' A dataset with information about incomes in states.
+#'
+#' @format A data frame
+"state_income_data"
+
+#' stonybridge
+#'
+#' Words from Stonybridge promotion
+#'
+#' @format A data frame
+"stonybridge"
+
+#' Students
+#'
+#' A small dataset with some survey information from randomly chosen students.
+#' Comes from the international census at school random sampler.
+#'
+#' @source \url{https://github.com/freeCodeCamp/2018-new-coder-survey}
+#' @format A data frame with 14 observations of 10 variables
+"students"
+
+#' Students Big
+#'
+#' A larger dataset with information from the student census. This time only for UK students.
+#'
+#' @source \url{https://new.censusatschool.org.nz/tools/random-sampler/}
+#' @format A data frame
+"students_big"
+
+
+#########
+### T ###
+#########
+
+#' Table of Numbers
+#'
+#' A randomly generated table of 100 numbers. Numbers come from a Poisson distribution
+#' with mean 3.
+#'
+#' @format A data frame
+"table_of_numbers"
+
+#' Temperature
+#'
+#' A matrix which contains the maximum temperature for each month in Scotland
+#' over 106 years (1910 from 2015). Each row corresponds to a year and each
+#' column to a month (January to December).
+#'
+#' @format A matrix
+"temp"
+
+#' Temperature Data Frame
+#'
+#' The same data available in temp, but in a long data frame.
+#'
+#' @format A data frame
+"temp_df"
+
+#' Total sales
+#'
+#' An invented dataset with total sales across 7 branches.
+#'
+#' A monthly breakdown of this dataset can be found in `monthly_sales`.
+#'
+#' @format A data frame
+"total_sales"
+
+#' Tyrell Corp Jobs
+#'
+#' @format A data frame
+"tyrell_corp_jobs"
+
+#########
+### U ###
+#########
+
+#' UK_poly
+#'
+#' UK_poly
+#'
+#' @format A data frame
+"UK_poly"
+
+#' Unimodal data
+#'
+#' A dataset with simulated unimodal data for teaching
+#'
+#' @format A data frame
+"unimodal"
+
+#########
+### V ###
+#########
+
+#' volcano
+#'
+#' volcano
+#'
+#' @format A data frame
+"volcano"
+
+#' VoteEU
+#'
+#' Two way table - vote in 2016 EU referendum and 2019 voting intention
+#' Converted to ggplot2 layout
+#'
+#' @format A data frame
+"vote19_eu"
+
+#########
+### W ###
+#########
+
+#' whisky
+#'
+#' Scottish whisky distilleries
+#'
+#' @format A data frame
+"whisky"
+
+#' women_in_gov
+#'
+#' Women in Parliament
+#' https://data.worldbank.org/indicator/SG.GEN.PARL.ZS
+#'
+#' @format A data frame
+"women_in_gov"
+
+#' world
+#'
+#' World map combined with data from Global Attitudes Survey 2017
+#'
+#' @format A data frame
+"world"
+
+
+#########
+### X ###
+#########
+
+
+#########
+### Y ###
+#########
+
+
+#########
+### Z ###
+#########
+
