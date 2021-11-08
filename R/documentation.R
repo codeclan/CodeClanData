@@ -900,13 +900,6 @@ NULL
 ### V ###
 #########
 
-#' volcano
-#'
-#' volcano
-#'
-#' @format A data frame
-"volcano"
-
 #' VoteEU
 #'
 #' Two way table - vote in 2016 EU referendum and 2019 voting intention

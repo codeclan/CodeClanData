@@ -598,9 +598,6 @@ unimodal <- read_csv("data-raw/data/unimodal.csv")
 ### V ###
 #########
 
-# volcano
-load("data-raw/data/volcano.Rdata")
-
 # vote19_eu
 load("data-raw/data/VoteEU.RData")
 
@@ -726,7 +723,6 @@ use_data(temp_df, overwrite = TRUE)
 use_data(total_sales, overwrite = TRUE)
 use_data(tyrell_corp_jobs, overwrite = TRUE)
 use_data(UK_poly, overwrite = TRUE)
-use_data(volcano, overwrite = TRUE)
 use_data(vote19_eu, overwrite = TRUE)
 use_data(whisky, overwrite = TRUE)
 use_data(women_in_gov, overwrite = TRUE)
