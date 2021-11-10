@@ -290,7 +290,8 @@ JNJ_stock_price <- read_csv("data-raw/data/JNJ.csv")
 # Crowd funding site Kickstarter 
 kickstarter <- 
   read_csv("data-raw/data/kickstarter_data.csv") %>% 
-  sample_frac(0.5)
+  sample_frac(0.5) %>% 
+  select(-`...1`)
 
 #########
 ### L ###
