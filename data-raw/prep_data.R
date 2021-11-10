@@ -287,6 +287,11 @@ JNJ_stock_price <- read_csv("data-raw/data/JNJ.csv")
 ### K ###
 #########
 
+# Crowd funding site Kickstarter 
+kickstarter <- 
+  read_csv("data-raw/data/kickstarter_data.csv") %>% 
+  sample_frac(0.5)
+
 #########
 ### L ###
 #########
@@ -678,6 +683,7 @@ use_data(invest_lodes, overwrite = TRUE)
 use_data(invest_lodes2, overwrite = TRUE)
 use_data(iq_scores, overwrite = TRUE)
 use_data(JNJ_stock_price, overwrite = TRUE)
+use_data(kickstarter, overwrite = TRUE)
 use_data(late_deliveries, overwrite = TRUE)
 use_data(late_deliveries, overwrite = TRUE)
 use_data(left_skewed, overwrite = TRUE)

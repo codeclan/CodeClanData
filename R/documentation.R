@@ -542,6 +542,14 @@ NULL
 ### K ###
 #########
 
+#' kickstarter
+#'
+#' Data for the crowd funding site Kickstarter 
+#' https://www.kaggle.com/kemical/kickstarter-projects
+#'
+#' @format A data frame
+"kickstarter"
+
 
 #########
 ### L ###
