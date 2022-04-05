@@ -287,10 +287,10 @@ JNJ_stock_price <- read_csv("data-raw/data/JNJ.csv")
 ### K ###
 #########
 
-# Crowd funding site Kickstarter 
-kickstarter <- 
-  read_csv("data-raw/data/kickstarter_data.csv") %>% 
-  sample_frac(0.5) %>% 
+# Crowd funding site Kickstarter
+kickstarter <-
+  read_csv("data-raw/data/kickstarter_data.csv") %>%
+  sample_frac(0.5) %>%
   select(-`...1`)
 
 #########
@@ -410,7 +410,7 @@ pension_liabilities <-
 
 # pension_surplus
 pension_surplus <-
-  read_excel('data-raw/data/ExerciseSet.xlsx') %>%
+  read_excel('data-raw/data/ExerciseSet.xlsx', sheet = 8) %>%
   clean_names()
 
 # pets
