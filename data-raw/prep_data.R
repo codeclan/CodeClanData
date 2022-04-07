@@ -611,7 +611,9 @@ load("data-raw/data/VoteEU.RData")
 
 # whisky
 load("data-raw/data/whisky.RData")
-whisky2 <- read_csv("data-raw/data/whiskies.csv") %>% select(Latitude, Longitude)
+# I honestly don't know why Lat + Long are the wrong way around
+whisky2 <- read_csv("data-raw/data/whiskies.csv") %>%
+  select(Longitude = Latitude, Latitude = Longitude)
 whisky <- select(whisky, -Latitude, -Longitude) %>% cbind(whisky2)
 rm(whisky2)
 
