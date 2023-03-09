@@ -1,2 +1,5 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
+
+# temporary - can add to build later if desired
+data-raw/data/charts_mini.csv
